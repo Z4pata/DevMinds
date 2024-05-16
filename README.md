@@ -3,7 +3,7 @@
 <h1>PROYECTO CALM MIND</h1>
 
 
-<img src="https://repository-images.githubusercontent.com/798533854/c4f92134-67a4-43d8-969a-b4d2ae4e5f2d">
+<img src='https://repository-images.githubusercontent.com/798533854/149ceb12-e986-465f-8b64-9cc4e722eff1'>
 
 
 
