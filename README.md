@@ -2,7 +2,10 @@
 
 <h1>PROYECTO CALM MIND</h1>
 
-<img src="https://repository-images.githubusercontent.com/798533854/149ceb12-e986-465f-8b64-9cc4e722eff1">
+<div style="text-align: center;">
+    <img src="file:///home/riwip4-031/Desktop/New%20Folder/DevMinds/img/DevMMind.jpeg">
+</div>
+
 
 <h2>Eslogan:</h2>
 <p>Naveguemos juntos por la salud mental. (Let's navigate mental health together.)</p>
