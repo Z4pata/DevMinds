@@ -2,9 +2,7 @@
 
 <h1>PROYECTO CALM MIND</h1>
 
-<div style="text-align: center;">
-    <img src="file:///home/riwip4-031/Desktop/New%20Folder/DevMinds/img/DevMMind.jpeg">
-</div>
+<img src="file:///home/riwip4-031/Desktop/New%20Folder/DevMinds/img/DevMMind.jpeg">
 
 
 <h2>Eslogan:</h2>
