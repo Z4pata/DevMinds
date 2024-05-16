@@ -1,9 +1,9 @@
 # DevMinds
 
 <h1>PROYECTO CALM MIND</h1>
-
-<img src="file:///home/riwip4-031/Desktop/New%20Folder/DevMinds/img/DevMMind.jpeg">
-
+<div style="text-align: center;">
+    <img src="file:///home/riwip4-031/Desktop/New%20Folder/DevMinds/img/DevMMind.jpeg">
+</div>
 
 <h2>Eslogan:</h2>
 <p>Naveguemos juntos por la salud mental. (Let's navigate mental health together.)</p>
