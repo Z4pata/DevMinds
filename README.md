@@ -2,9 +2,7 @@
 
 <h1>PROYECTO CALM MIND</h1>
 
-<div style="text-align: center;">
-    <img src="file:///home/riwip4-031/Desktop/New%20Folder/DevMinds/img/DevMMind.jpeg">
-</div>
+<img src='https://repository-images.githubusercontent.com/798533854/149ceb12-e986-465f-8b64-9cc4e722eff1'>
 
 
 <h2>Eslogan:</h2>
@@ -48,5 +46,24 @@ El problema principal en este sector es el déficit de apoyo en línea, y el hec
 <h2>Requerimientos Funcionales:</h2>
 <p>El usuario elegirá entre dos opciones iniciales, las cuales serán 2 rangos de edad ( menores de edad ), ( mayores de edad ), dependiendo de la eleccion del usuario lo enviara a una pagina u otra, la página para los menores de edad será muy dinámica, con muchos estimulos visuales que hagan que al usuario le den ganas de quedarse e investigar mas dentro de nuestra pagina, mientras que la de los mayores de edad será un poco mas sobria, pero siempre intentando capturar la atención del usuario.<br> <br>
 Cada página tendrá una pregunta dirigida al usuario "How do you feel?", posteriormente y haciendo referencia a esta pregunta habrán una serie de botones con sentimientos o problemas que pueda tener una persona en relacion a sus emociones, cada boton redireccionará al usuario a un HTML o página especificamente creado/a para la emoción correspondiente de ese botón.<br>
-Estas páginas tendrán secciónes para dar información acerca de esta emoción, un pequeño juego para que nuestro usuario se desestrese y pueda liberar sus emociones de una manera mas sana, pequeñas notas motivadoras y, mas adelante, un foro en el cual la persona podra hablar de sus emociones con otras personas en su misma situación, de forma anonima y sin miedo a sentirse o ser juzgado
+Estas páginas tendrán secciónes para dar información acerca de esta emoción, un pequeño juego para que nuestro usuario se desestrese y pueda liberar sus emociones de una manera mas sana, pequeñas notas motivadoras y, mas adelante, un foro en el cual la persona podra hablar de sus emociones con otras personas en su misma situación, de forma anonima y sin miedo a sentirse o ser juzgado.
 </p>
+
+<h2>Cronograma:</h2>
+<ul>
+    <li>
+        <h3>Semana 1:</h3>
+        <ul>
+            <li>
+                <h4>Dia 1 - 2:</h4>
+                <p>Establecemos en primera instancia, los roles de cada integrante, y el cronograma, en el cual organizamos cronológicamente lo que haremos en el proyecto durante las dos semanas.</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>
+        <h3>Semana 2:</h3>
+        <p></p>
+    </li>
+</ul>
