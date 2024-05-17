@@ -12,7 +12,7 @@
 
 
 <h2>Objetivo General:</h2>
-<p>Nuestro proyecto tiene como tema central la salud mental, entonces nuestro objetivo principal es impactar de manera positiva en nuestros usuarios y transformar sus pensamientos limitantes. Somos un centro de apoyo donde podrás aprender como mejorar tu estabilidad tanto mental, como emocional. Y además, tendrás la libertad de expresarte sin miedo a ser juzgado.</p>
+<p>Nuestro proyecto tiene como tema central la salud mental, entonces nuestro objetivo principal es impactar de manera positiva en nuestros usuarios y transformar sus pensamientos limitantes. Somos un centro de apoyo donde podrás aprender como mejorar tu estabilidad tanto mental, como emocional. Y además, tendrás la libertad de expresarte sin miedo a ser juzgado.<br>Principalmente irá dirigido a personas en cualquier rango de edad la cual se sienta en la necesidad de encontrar un lugar seguro con buena información, con métodos y alternativas para transitar sus emociones de la forma más sana posible</p>
 
 
 <h2>Planteamiento Del Problema:</h2>
@@ -58,15 +58,15 @@ Estas páginas tendrán secciónes para dar información acerca de esta emoción
         <ul>
             <li>
                 <h4>Dia 1 - 2:</h4>
-                <p>Establecemos en primera instancia, los roles de cada integrante, y el cronograma, en el cual organizamos cronológicamente lo que haremos en el proyecto durante las dos semanas.</p>
+                <p>Establecemos en primera instancia, los roles de cada integrante, y el cronograma, en el cual organizamos cronológicamente lo que haremos en el proyecto durante las semanas de trabajo.</p>
             </li>
             <li>
                 <h4>Dia 3 - 4:</h4>
-                <p>Realizamos la documentación, en donde especificamos todos los objetivos y metas de nuestro proyecto.</p>
+                <p>Realizamos la documentación, en donde especificamos todos los objetivos y metas de nuestro proyecto, damos a conocer los principales problemas en los que pensamos para crear nuestro proyecto y establecemos unos objetivos que anhelamos alcanzar tanto a corto y mediano como a largo plazo.</p>
             </li>
             <li>
                 <h4>Dia 5</h4>
-                <p>Establecimos la paleta de colores, e ideamos mentalmente el diseño de la página pensando en el público al que será dirigido.</p>
+                <p>Terminamos la documentacion estableciendo las funcionalidades que va a tener la pagina con respecto a lo que puede hacer el usuario, ademas, establecimos la paleta de colores, e ideamos mentalmente el diseño de la página pensando en el público al que será dirigido.</p>
             </li>
         </ul>
     </li>
@@ -77,12 +77,14 @@ Estas páginas tendrán secciónes para dar información acerca de esta emoción
         <ul>
             <li>
                 <h4>Dia 1 - 2:</h4>
-                <p>Estudiamos como usar Git y GitHub, para poder usar esta herramienta de la mejor manera.</p>
+                <p>Estudiamos como usar Git y GitHub, creamos un repositorio y le añadimos la estructura que en primera instancia creemos será nuestra base</p>
             </li>
             <li>
                 <h4>Dia 3 - 4 - 5:</h4>
-                <p>Pulimos detalles del diseño estableciendo el diseño final del Mockup y comenzamos con la maquetación de nuestra página.</p>
+                <p>Pulimos detalles del diseño estableciendo el diseño final del Mockup y comenzamos con la maquetación de nuestra página, ademas editamos el README del repositorio añadiendole tanto nuestro logo como toda esta informacion pedida y necesaria para la creacion de nuestro proyecto</p>
             </li>
         </ul>
     </li>
 </ul>
+
+<h2><a href="https://www.canva.com/design/DAGFT9Yq84E/MjOv2PYc2yXEZSl5ZCXABQ/edit?utm_content=DAGFT9Yq84E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">MockUp o Maqueta</a></h2>
