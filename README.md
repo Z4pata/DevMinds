@@ -2,7 +2,7 @@
 
 <h1>PROYECTO CALM MIND</h1>
 
-<img src='https://repository-images.githubusercontent.com/798533854/149ceb12-e986-465f-8b64-9cc4e722eff1'>
+<img src='https://repository-images.githubusercontent.com/798533854/5408f206-1fa0-459a-9d57-1302aa7e4bc0'>
 
 
 <h2>Eslogan:</h2>
@@ -49,6 +49,7 @@ Cada página tendrá una pregunta dirigida al usuario "How do you feel?", poster
 Estas páginas tendrán secciónes para dar información acerca de esta emoción, un pequeño juego para que nuestro usuario se desestrese y pueda liberar sus emociones de una manera mas sana, pequeñas notas motivadoras y, mas adelante, un foro en el cual la persona podra hablar de sus emociones con otras personas en su misma situación, de forma anonima y sin miedo a sentirse o ser juzgado.
 </p>
 
+
 <h2>Cronograma:</h2>
 <ul>
     <li>
@@ -58,12 +59,29 @@ Estas páginas tendrán secciónes para dar información acerca de esta emoción
                 <h4>Dia 1 - 2:</h4>
                 <p>Establecemos en primera instancia, los roles de cada integrante, y el cronograma, en el cual organizamos cronológicamente lo que haremos en el proyecto durante las dos semanas.</p>
             </li>
+            <li>
+                <h4>Dia 3 - 4:</h4>
+                <p>Realizamos la documentación, en donde especificamos todos los objetivos y metas de nuestro proyecto.</p>
+            </li>
+            <li>
+                <h4>Dia 5</h4>
+                <p>Establecimos la paleta de colores, e ideamos mentalmente el diseño de la página pensando en el público al que será dirigido.</p>
+            </li>
         </ul>
     </li>
 </ul>
 <ul>
     <li>
         <h3>Semana 2:</h3>
-        <p></p>
+        <ul>
+            <li>
+                <h4>Dia 1 - 2:</h4>
+                <p>Estudiamos como usar Git y GitHub, para poder usar esta herramienta de la mejor manera.</p>
+            </li>
+            <li>
+                <h4>Dia 3 - 4 - 5:</h4>
+                <p>Pulimos detalles del diseño estableciendo el diseño final del Mockup y comenzamos con la maquetación de nuestra página.</p>
+            </li>
+        </ul>
     </li>
 </ul>
