@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     font-family: "Jersey 10", sans-serif;
     background-image: url("./fondoverde.jpg");
@@ -41,3 +45,4 @@ footer {
     background-color: brown;
     height: 15vh;
 }
+
