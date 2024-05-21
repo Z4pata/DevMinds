@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Jersey 10", sans-serif;
+    background-image: url("../img/bgYoungs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 40px;
+    a {
+        text-decoration: none;
+    }
+}
+
+main {
+    background-color: rgb(73, 64, 64);
+    padding: 1rem;
+    height: 50vh;
+}
