@@ -4,13 +4,9 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 html {
     font-family: "Jersey 10", sans-serif;
-    background-image: url(/fondonaranja.jpg);
+    background-image: url("../img/bgYoungs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -20,29 +16,13 @@ body {
     flex-direction: column;
     margin: 1rem;
     gap: 40px;
-}
-
-header {
-    background-color: aliceblue;
-    height: 20%;
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    height: 15vh;
-
+    a {
+        text-decoration: none;
+    }
 }
 
 main {
     background-color: rgb(73, 64, 64);
     padding: 1rem;
     height: 50vh;
-
 }
-
-footer {
-    background-color: brown;
-    height: 15vh;
-}
-
