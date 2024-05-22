@@ -10,7 +10,7 @@ a {
 
 html {
     font-family: "Jersey 10", sans-serif;
-    background-image: url("./fondoverde.jpg");
+    background-image: url("../img/bgYoungs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -20,18 +20,26 @@ body {
     flex-direction: column;
     margin: 1rem;
     gap: 40px;
+    a {
+        text-decoration: none;
+    }
 }
 
 header {
     background-color: aliceblue;
     height: 20%;
+    width: 100%;
 }
 
 nav {
     display: flex;
     width: 100%;
     height: 15vh;
-
+    align-items: center;
+    justify-content: space-between;
+        img {
+            width: 22rem;
+        }
 }
 
 main {
