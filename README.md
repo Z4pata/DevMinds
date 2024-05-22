@@ -3,7 +3,7 @@
 <h1>PROYECTO CALM MIND</h1>
 
 
-<img src='https://repository-images.githubusercontent.com/798533854/5408f206-1fa0-459a-9d57-1302aa7e4bc0'>
+<img src='https://repository-images.githubusercontent.com/798533854/2964ed9c-f940-412c-be14-b27c4b8bab15'>
 
 
 <h2>Eslogan:</h2>
@@ -87,4 +87,6 @@ Estas páginas tendrán secciónes para dar información acerca de esta emoción
     </li>
 </ul>
 
-<h2><a href="https://www.canva.com/design/DAGFT9Yq84E/MjOv2PYc2yXEZSl5ZCXABQ/edit?utm_content=DAGFT9Yq84E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">MockUp o Maqueta</a></h2>
+<h2><a href="https://www.canva.com/design/DAGFday-XK8/HtsfE12G4S2adfbY_dnHGQ/edit">MockUp o Maqueta</a></h2>
+
+<h3>Posee Mayor compatibilidad con el navegador Google Chrome</h3>
