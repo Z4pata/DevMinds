@@ -3,11 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-a {
-    text-decoration: none;
-}
-
 html {
     font-family: "Jersey 10", sans-serif;
     background-image: url("/img/bgAdults.jpg");
@@ -21,23 +16,55 @@ body {
     justify-content: center;
     height: 100vh;
 }
-
 main {
     width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
+.nubes {
+    width: 150px;
+    height: 50px;
+    background-image: url(/img/nube.png);
+    background-size: 100% 100%;
+    position: absolute;
+    
+    z-index: -1;
+}
+
+@keyframes movimiento1 {
+    from {margin-left: 89%;}
+    to {margin-left: 10%;}
+}
+
+.nubes:nth-child(1) {
+    background-image: url(/img/nube.png);
+    animation: movimiento1 33s infinite;
+}
+
+.nubes:nth-child(2) {
+    background-image: url(/img/nube.png);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
 .container {
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     height: 400px;
     
 }
 
 .containerButtons {
-    background-color: brown;
+    /* background-color: brown; */
     width: 45%;
     height: 400px;
     display: flex;
@@ -47,7 +74,7 @@ main {
 }
 
 .containerHearts {
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 5%;
     height: 400px;
     display: flex;
