@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 html {
     font-family: "Jersey 10", sans-serif;
     background-image: url("/img/bgMinors.jpg");
