@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: "Jersey 10", sans-serif;
+    background-image: url("/img/bgAdults.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    height: 400px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.containerButtons {
+    background-color: brown;
+    width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+.containerHearts {
+    background-color: yellow;
+    width: 5%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+button {
+    width: 140px;
+    height: 50px;
+    justify-content: end;
+    border-radius: 30px;
+    background-color: #fdfae6;
+    border: 2px solid black;
+}
+
+
+/* Animation buttons */
+
+/* Anxiety button */
+.buttonAnxiety {
+    --bg: #fdfae6;
+    --hover-bg: #004aad;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonAnxiety:hover {
+    color: #fdfae6;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonAnxiety:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Depression button */
+.buttonDepression {
+    --bg: #fdfae6;
+    --hover-bg: #a6ff2d;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonDepression:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonDepression:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Fear button */
+.buttonFear {
+    --bg: #fdfae6;
+    --hover-bg: #ff66c4;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonFear:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonFear:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Frustration button */
+.buttonFrustration {
+    --bg: #fdfae6;
+    --hover-bg: #737373;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonFrustration:hover {
+    color: #fdfae6;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonFrustration:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Imposter syndrom button */
+.buttonSyndrom {
+    --bg: #fdfae6;
+    --hover-bg: #ff3131;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonSyndrom:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonSyndrom:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.heartAnsiedad {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.heartDepresion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6ff2d;
+    border: 2px solid black;
+}
+
+.heartMiedo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff66c4;
+    border: 2px solid black;
+}
+
+.heartFrustracion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #737373;
+    border: 2px solid black;
+}
+
+.heartSindrome {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3131;
+    border: 2px solid black;
+}
+
+i {
+    color: #fdfae6;
+    font-size: 20px;
+}
+
+.containerBox {
+    background-image: url(/img/objeto1.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 400px;
+}
