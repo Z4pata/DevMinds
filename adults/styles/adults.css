@@ -10,7 +10,7 @@ a {
 
 html {
     font-family: "Jersey 10", sans-serif;
-    background-image: url(/olders/fondonaranja.jpg);
+    background-image: url("/img/bgAdults.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
