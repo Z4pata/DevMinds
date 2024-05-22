@@ -1,11 +1,3 @@
-body{
-    font-family: "Poppin", sans-serif;
-    background-color: #2e3537;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .book{
     width: 35vw;
