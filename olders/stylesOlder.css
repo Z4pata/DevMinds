@@ -10,39 +10,109 @@ a {
 
 html {
     font-family: "Jersey 10", sans-serif;
-    background-image: url(/fondonaranja.jpg);
+    background-image: url(/olders/fondonaranja.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body {
     display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-header {
-    background-color: aliceblue;
-    height: 20%;
-}
-
-nav {
+.container {
     display: flex;
+    background-color: blue;
     width: 100%;
-    height: 15vh;
-
+    height: 400px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-main {
-    background-color: rgb(73, 64, 64);
-    padding: 1rem;
-    height: 50vh;
-
-}
-
-footer {
+.containerButtons {
     background-color: brown;
-    height: 15vh;
+    width: 35%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerHearts {
+    background-color: yellow;
+    width: 15%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerBox {
+    background-color: aqua;
+    width: 50%;
+    height: 400px;
+}
+
+button {
+    width: 140px;
+    height: 50px;
+    float: right;
+}
+
+.heartAnsiedad {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+}
+
+.heartDepresion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6ff2d;
+}
+
+.heartMiedo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+}
+
+.heartFrustracion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+}
+
+.heartSindrome {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+}
+
+i {
+    color: #fdfae6;
+    font-size: 20px;
 }
 
