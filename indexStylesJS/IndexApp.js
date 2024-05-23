@@ -17,10 +17,16 @@ btnLower.addEventListener("click",(event)=>{
 // Functions
 function plus18(){
     localStorage.setItem("edad","+18");
-    window.location.href = "adults/html/indexAdults.html";
+    let age = localStorage.getItem("edad");
+    if (age == "+18"){
+        window.location.href = "adults/html/indexAdults.html";
+    }
 }
 
 function minus18(){
     localStorage.setItem("edad","-18");
-    window.location.href = "Minors/html/indexMinors.html";
+    let age = localStorage.getItem("edad");
+    if (age == "-18"){
+        window.location.href = "Minors/html/indexMinors.html";
+    }
 }
