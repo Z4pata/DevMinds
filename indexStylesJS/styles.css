@@ -27,6 +27,7 @@ main {
     width: 100vw;
 }
 
+/* container h1 */
 #title {
     margin-left: 40px;
     margin-right: 40px;
@@ -39,22 +40,21 @@ main {
     width: 50%;
     height: 50vh;
     background-color: #fdfae6;
-    
-
 }
 
 h1 {
     font-size: 7rem;
 }   
 
+/* container btns */
  #container {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     width: 50%;
-    
 }
 
+/* btn under 18 */
 #btnLower {
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ h1 {
         }
  } 
 
- 
+ /* btn over 18 */
 #btnHigher {
     display: flex;
     align-items: center;
@@ -115,3 +115,79 @@ h1 {
             box-shadow: none;
         }
  } 
+
+ /* ---------- RESPONSIVE ---------- */
+
+ /* cellphone */
+ @media screen and (max-width: 420px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+
+    #title {
+        margin-left: 0;
+        margin-right: 0;
+        width: 60vw;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #container {
+        gap: 1rem;
+    }
+
+    #btnLower {
+        a {
+            font-size: 30px;
+            padding: 15px;
+        }
+    }
+
+    #btnHigher {
+        a {
+            font-size: 30px;
+            padding: 15px;
+        }
+    }
+ }
+
+ /* tablet */
+ @media screen and (min-width: 421px) {
+    body {
+        margin-left: 0;
+    }
+
+    main {
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 0;
+    }
+
+    #title {
+        width: 70vw;
+        height: 70vh;
+    }
+
+    #btnLower {
+        
+        a {
+            padding: 20px;
+        }
+    }
+
+    #btnHigher {
+        a {
+            padding: 20px;
+        }
+    }
+ }
+
+ /* desktop */
+ @media screen and (min-width: 769px) {
+
+ }
