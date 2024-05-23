@@ -6,7 +6,7 @@
 
 html {
     font-family: "Jersey 10", sans-serif;
-    background-image: url("../img/bgYoungs.jpg");
+    background-image: url("/img/bgMinors.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -22,7 +22,240 @@ body {
 }
 
 main {
-    background-color: rgb(73, 64, 64);
+    /* background-color: rgb(73, 64, 64); */
     padding: 1rem;
-    height: 50vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Main Structure */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.containerButtons {
+    /* background-color: brown; */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    justify-content: end;
+}
+
+.containerHearts {
+    /* background-color: yellow; */
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.buttonFeel {
+    width: 140px;
+    height: 50px;
+    justify-content: end;
+    border-radius: 30px;
+    background-color: #fdfae6;
+    border: 2px solid black;
+}
+
+
+/* Animation buttons */
+
+/* Happy button */
+.buttonHappy {
+    --bg: #fdfae6;
+    --hover-bg: #ff8200;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonHappy:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonHappy:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Rabid button */
+.buttonRabid {
+    --bg: #fdfae6;
+    --hover-bg: #ff0053;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonRabid:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonRabid:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Sad button */
+.buttonSad {
+    --bg: #fdfae6;
+    --hover-bg: #38b6ff;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonSad:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonSad:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Worried button */
+.buttonWorried {
+    --bg: #fdfae6;
+    --hover-bg: #ffcc00;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonWorried:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonWorried:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Scary button */
+.buttonScary {
+    --bg: #fdfae6;
+    --hover-bg: #00fff2;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonScary:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonScary:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.heartHappy {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8200;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.heartRabid {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0053;
+    border: 2px solid black;
+}
+
+.heartSad {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38b6ff;
+    border: 2px solid black;
+}
+
+.heartWorried {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcc00;
+    border: 2px solid black;
+}
+
+.heartScary {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00fff2;
+    border: 2px solid black;
+}
+
+.heart {
+    color: #fdfae6;
+    font-size: 20px;
+}
+
+.containerBox {
+    background-image: url(/img/objeto1.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    width: 50%;
+    height: 400px;
 }
