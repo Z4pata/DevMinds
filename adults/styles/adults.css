@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Jersey 10", sans-serif;
+    background-image: url("/img/bgAdults.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    position: relative;
+}
+main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.nubes {
+    background-image: url(/img/nube.png);
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+@keyframes movimiento1 {
+    from {margin-left: 89%;}
+    to {margin-left: 65%;}
+}
+
+@keyframes movimiento2 {
+    from {margin-left: 89%;}
+    to {margin-left: 80%;}
+}
+
+@keyframes movimiento3 {
+    from {margin-left: 89%;}
+    to {margin-left: 75%;}
+}
+
+@keyframes movimiento4 {
+    from {margin-left: 89%;}
+    to {margin-left: 67%;}
+}
+
+@keyframes movimiento5 {
+    from {margin-left: -15%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento6 {
+    from {margin-left: -15%;}
+    to {margin-left: 23%;}
+}
+
+@keyframes movimiento7 {
+    from {margin-left: -15%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento8 {
+    from {margin-left: -15%;}
+    to {margin-left: 30%;}
+}
+
+.nubes:nth-child(1) {
+    background-image: url(/img/nube.png);
+    animation: movimiento1 4s linear forwards;
+}
+
+.nubes:nth-child(2) {
+    background-image: url(/img/nube.png);
+    animation: movimiento2 4s linear forwards;
+}
+
+.nubes:nth-child(3) {
+    background-image: url(/img/nube.png);
+    animation: movimiento3 4s linear forwards;
+}
+
+.nubes:nth-child(4) {
+    background-image: url(/img/nube.png);
+    animation: movimiento4 4s linear forwards;
+}
+
+.nubes:nth-child(5) {
+    background-image: url(/img/nube.png);
+    animation: movimiento5 4s linear forwards;
+}
+
+.nubes:nth-child(6) {
+    background-image: url(/img/nube.png);
+    animation: movimiento6 4s linear forwards;
+}
+
+.nubes:nth-child(7) {
+    background-image: url(/img/nube.png);
+    animation: movimiento7 4s linear forwards;
+}
+
+.nubes:nth-child(8) {
+    background-image: url(/img/nube.png);
+    animation: movimiento8 4s linear forwards;
+}
+
+.nube1 {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube2 {
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube3 {
+    position: absolute;
+    top: 150px;
+    width: 150px;
+    height: 70px;
+}
+
+.nube4 {
+    position: absolute;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube5 {
+    position: absolute;
+    top: 300px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube6 {
+    position: absolute;
+    top: 350px;
+    width: 170px;
+    height: 85px;
+}
+
+.nube7 {
+    position: absolute;
+    top: 420px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube8 {
+    position: absolute;
+    top: 470px;
+    width: 180px;
+    height: 90px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
+    height: 400px;
+    
+}
+
+.containerButtons {
+    /* background-color: brown; */
+    width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+.containerHearts {
+    /* background-color: yellow; */
+    width: 5%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+button {
+    width: 140px;
+    height: 50px;
+    justify-content: end;
+    border-radius: 30px;
+    background-color: #fdfae6;
+    border: 2px solid black;
+}
+
+
+/* Animation buttons */
+
+/* Anxiety button */
+.buttonAnxiety {
+    --bg: #fdfae6;
+    --hover-bg: #004aad;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonAnxiety:hover {
+    color: #fdfae6;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonAnxiety:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Depression button */
+.buttonDepression {
+    --bg: #fdfae6;
+    --hover-bg: #a6ff2d;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonDepression:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonDepression:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Fear button */
+.buttonFear {
+    --bg: #fdfae6;
+    --hover-bg: #ff66c4;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonFear:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonFear:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Frustration button */
+.buttonFrustration {
+    --bg: #fdfae6;
+    --hover-bg: #737373;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonFrustration:hover {
+    color: #fdfae6;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonFrustration:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Imposter syndrom button */
+.buttonSyndrom {
+    --bg: #fdfae6;
+    --hover-bg: #ff3131;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonSyndrom:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonSyndrom:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.heartAnsiedad {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.heartDepresion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6ff2d;
+    border: 2px solid black;
+}
+
+.heartMiedo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff66c4;
+    border: 2px solid black;
+}
+
+.heartFrustracion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #737373;
+    border: 2px solid black;
+}
+
+.heartSindrome {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3131;
+    border: 2px solid black;
+}
+
+i {
+    color: #fdfae6;
+    font-size: 20px;
+}
+
+.containerBox {
+    background-image: url(/img/objeto1.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 400px;
+}
