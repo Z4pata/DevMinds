@@ -187,6 +187,22 @@ a {
     align-items: end;
 }
 
+.containerBox {
+    display: flex;
+    background-color: #a6ff2d;
+    justify-content: center;
+    align-items: center;    
+    background-image: url(/img/objeto1.png);
+    background-repeat: no-repeat;
+    width: 21.3%;
+    height: 300px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+
 .containerHearts {
     /* background-color: yellow; */
     width: 5%;
@@ -385,9 +401,3 @@ i {
     font-size: 20px;
 }
 
-.containerBox {
-    background-image: url(/img/objeto1.png);
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 400px;
-}
