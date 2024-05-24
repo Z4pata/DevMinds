@@ -35,7 +35,7 @@ main {
     align-items: center;
 }
 
-
+/* -----------------------------------Buttons and hearts------------------------------------------- */
 .container {
     display: flex;
     justify-content: center;
@@ -67,6 +67,12 @@ main {
 }
 
 
+.container-buttons-hearts{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
 .buttonFeel {
     width: 140px;
     height: 50px;
@@ -79,10 +85,10 @@ main {
 
 /* Animation buttons */
 
-/* Anxiety button */
-.buttonAnxiety {
+/* Happy button */
+.buttonHappy {
     --bg: #fdfae6;
-    --hover-bg: #004aad;
+    --hover-bg: #ff8200;
     --hover-text: #000;
     cursor: pointer;
     border: 2px solid black;
@@ -91,44 +97,21 @@ main {
     background: var(--bg);
     transition: 0.2s;
 }
-.buttonAnxiety:hover {
-    color: #fdfae6;
-    transform: translate(-0.25rem, -0.25rem);
-    background: var(--hover-bg);
-    box-shadow: 0.25rem 0.25rem black;
-}
-.buttonAnxiety:active {
-    transform: translate(0);
-    box-shadow: none;
-}
-
-/* Depression button */
-.buttonDepression {
-    --bg: #fdfae6;
-    --hover-bg: #a6ff2d;
-    --hover-text: #000;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 30px;
-    padding: 0.8em 2em;
-    background: var(--bg);
-    transition: 0.2s;
-}
-.buttonDepression:hover {
+.buttonHappy:hover {
     color: black;
     transform: translate(-0.25rem, -0.25rem);
     background: var(--hover-bg);
     box-shadow: 0.25rem 0.25rem black;
 }
-.buttonDepression:active {
+.buttonHappy:active {
     transform: translate(0);
     box-shadow: none;
 }
 
-/* Fear button */
-.buttonFear {
+/* Rabid button */
+.buttonRabid {
     --bg: #fdfae6;
-    --hover-bg: #ff66c4;
+    --hover-bg: #ff0053;
     --hover-text: #000;
     cursor: pointer;
     border: 2px solid black;
@@ -137,21 +120,21 @@ main {
     background: var(--bg);
     transition: 0.2s;
 }
-.buttonFear:hover {
+.buttonRabid:hover {
     color: black;
     transform: translate(-0.25rem, -0.25rem);
     background: var(--hover-bg);
     box-shadow: 0.25rem 0.25rem black;
 }
-.buttonFear:active {
+.buttonRabid:active {
     transform: translate(0);
     box-shadow: none;
 }
 
-/* Frustration button */
-.buttonFrustration {
+/* Sad button */
+.buttonSad {
     --bg: #fdfae6;
-    --hover-bg: #737373;
+    --hover-bg: #38b6ff;
     --hover-text: #000;
     cursor: pointer;
     border: 2px solid black;
@@ -160,92 +143,115 @@ main {
     background: var(--bg);
     transition: 0.2s;
 }
-.buttonFrustration:hover {
-    color: #fdfae6;
-    transform: translate(-0.25rem, -0.25rem);
-    background: var(--hover-bg);
-    box-shadow: 0.25rem 0.25rem black;
-}
-.buttonFrustration:active {
-    transform: translate(0);
-    box-shadow: none;
-}
-
-/* Imposter syndrom button */
-.buttonSyndrom {
-    --bg: #fdfae6;
-    --hover-bg: #ff3131;
-    --hover-text: #000;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 30px;
-    padding: 0.8em 2em;
-    background: var(--bg);
-    transition: 0.2s;
-}
-.buttonSyndrom:hover {
+.buttonSad:hover {
     color: black;
     transform: translate(-0.25rem, -0.25rem);
     background: var(--hover-bg);
     box-shadow: 0.25rem 0.25rem black;
 }
-.buttonSyndrom:active {
+.buttonSad:active {
     transform: translate(0);
     box-shadow: none;
 }
 
-.heartAnsiedad {
+/* Worried button */
+.buttonWorried {
+    --bg: #fdfae6;
+    --hover-bg: #ffcc00;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonWorried:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonWorried:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Scary button */
+.buttonScary {
+    --bg: #fdfae6;
+    --hover-bg: #00fff2;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonScary:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonScary:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.heartHappy {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #004aad;
+    background-color: #ff8200;
     border: 2px solid rgb(0, 0, 0);
 }
 
-.heartDepresion {
+.heartRabid {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a6ff2d;
+    background-color: #ff0053;
     border: 2px solid black;
 }
 
-.heartMiedo {
+.heartSad {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff66c4;
+    background-color: #38b6ff;
     border: 2px solid black;
 }
 
-.heartFrustracion {
+.heartWorried {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #737373;
+    background-color: #ffcc00;
     border: 2px solid black;
 }
 
-.heartSindrome {
+.heartScary {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff3131;
+    background-color: #00fff2;
     border: 2px solid black;
 }
 

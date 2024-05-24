@@ -36,7 +36,7 @@ main {
 }
 
 
-/* Main Structure */
+/* -----------------------------------Buttons and hearts------------------------------------------- */
 .container {
     display: flex;
     justify-content: center;
@@ -285,7 +285,7 @@ main {
 
 }
 
-
+/* -----------------------------------Image beside the buttons------------------------------------------- */
 .containerBox {
     background-image: url(/img/objeto1.png);
     background-repeat: no-repeat;
