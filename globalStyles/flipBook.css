@@ -1,13 +1,13 @@
 
 .book{
-    width: 35vw;
-    height: 80vh;
+    width: 40%;
+    height: 100%;
     position: relative;
     transition: 2s;
     perspective: 1500;
 }
 
-input{
+.checkbox {
     display: none;
 }
 
@@ -66,8 +66,8 @@ input{
     z-index: 1;
     background-color: #F8F0E1;
     position: absolute;
-    width: 30vw;
-    height: 75vh;
+    width: 80%;
+    height: 90%;
     border-radius: 0 15px 15px 0;
     margin-top: 15px;
     transform-origin: left;
