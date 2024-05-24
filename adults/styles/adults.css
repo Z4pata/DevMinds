@@ -70,42 +70,42 @@ main {
 
 .nubes:nth-child(1) {
     background-image: url(/img/nube.png);
-    animation: movimiento1 4s linear forwards;
+    animation: movimiento1 6s linear forwards;
 }
 
 .nubes:nth-child(2) {
     background-image: url(/img/nube.png);
-    animation: movimiento2 4s linear forwards;
+    animation: movimiento2 6s linear forwards;
 }
 
 .nubes:nth-child(3) {
     background-image: url(/img/nube.png);
-    animation: movimiento3 4s linear forwards;
+    animation: movimiento3 6s linear forwards;
 }
 
 .nubes:nth-child(4) {
     background-image: url(/img/nube.png);
-    animation: movimiento4 4s linear forwards;
+    animation: movimiento4 6s linear forwards;
 }
 
 .nubes:nth-child(5) {
     background-image: url(/img/nube.png);
-    animation: movimiento5 4s linear forwards;
+    animation: movimiento5 6s linear forwards;
 }
 
 .nubes:nth-child(6) {
     background-image: url(/img/nube.png);
-    animation: movimiento6 4s linear forwards;
+    animation: movimiento6 6s linear forwards;
 }
 
 .nubes:nth-child(7) {
     background-image: url(/img/nube.png);
-    animation: movimiento7 4s linear forwards;
+    animation: movimiento7 6s linear forwards;
 }
 
 .nubes:nth-child(8) {
     background-image: url(/img/nube.png);
-    animation: movimiento8 4s linear forwards;
+    animation: movimiento8 6s linear forwards;
 }
 
 .nube1 {
@@ -186,6 +186,21 @@ a {
     gap: 10px;
     align-items: end;
 }
+
+.containerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-image: url(/img/objeto1.png);
+    background-repeat: no-repeat;
+    width: 21.3%;
+    height: 300px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
 
 .containerHearts {
     /* background-color: yellow; */
@@ -385,9 +400,3 @@ i {
     font-size: 20px;
 }
 
-.containerBox {
-    background-image: url(/img/objeto1.png);
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 400px;
-}
