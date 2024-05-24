@@ -8,8 +8,3 @@ body {
     background-image: url("/img/bgMinors.jpg");
     background-size: cover;
 }
-
-nav {
-    display: flex;
-    gap: 30%;
-}
