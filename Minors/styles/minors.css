@@ -307,7 +307,7 @@ main {
 @media (max-width: 400px){
     .containerBox {
     background-image: url(/img/bgMinors.jpg)
-
+    }
     body {
         position: relative;
     }
@@ -453,3 +453,4 @@ main {
         width: 180px;
         height: 90px;
     }
+}
