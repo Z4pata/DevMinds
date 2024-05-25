@@ -11,21 +11,41 @@
 <body>
     <header>
         <nav>
-            <section id="nav_logo">
-                <a href="">
-                    <img src="" alt="calMind">
+            <section class="nav-logo">
+                <a href="" class="anchor-logo">
+                    <img src="/img/calmMind.png" alt="Calm Mind logo">
                 </a>
             </section>
-            <section id="nav_links">
+            <section class="nav-links">
                 <a href="">About Us</a>
                 <a href="">Games</a>
                 <a href="./infoMinors.html">Minors</a>
                 <a href="/adults/html/infoAdults.html">Adults</a>
                 <a href="">Contact Us</a>
             </section>
-            <section id="search">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="search" placeholder="Search">
+            <section class="search">
+                <input type="search" placeholder="Search" class="search-input">
+                <button class="magnifier"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </section>
+            <label class="label-hamburger" for="hamburger_menu">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                width="40" 
+                height="40" 
+                fill="currentColor" 
+                class="bi bi-list" 
+                viewBox="0 0 16 16">
+                    <path 
+                    fill-rule="evenodd" 
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+            <input class="hamburger-menu" type="checkbox" name="" id="hamburger_menu">
+            <section class="nav-links-hamburger">
+                <a href="">About Us</a>
+                <a href="">Games</a>
+                <a href="./infoMinors.html">Minors</a>
+                <a href="/adults/html/infoAdults.html">Adults</a>
+                <a href="">Contact Us</a>
             </section>
         </nav>
     </header>

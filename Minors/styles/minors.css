@@ -67,6 +67,7 @@ main {
     gap: 10px;
     align-items: end;
     justify-content: end;
+    margin-right: 4%;
 }
 
 .containerHearts {
@@ -300,10 +301,21 @@ main {
 .containerBox {
     background-image: url(/img/objeto1.png);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 50%;
     width: 50%;
     height: 400px;
 }
 @media (max-width: 400px){
     .containerBox {
-    background-image: url(/img/bgMinors.jpg)
+        background-image: url(/img/objeto1.png);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        width: 71%;
+        height: 281px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
