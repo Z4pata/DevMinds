@@ -29,7 +29,7 @@ main {
 }
 
 @keyframes movimiento1 {
-    from {margin-left: 89%;}
+    from {margin-left: 79%;}
     to {margin-left: 65%;}
 }
 
@@ -39,17 +39,17 @@ main {
 }
 
 @keyframes movimiento3 {
-    from {margin-left: 89%;}
+    from {margin-left: 59%;}
     to {margin-left: 75%;}
 }
 
 @keyframes movimiento4 {
-    from {margin-left: 89%;}
+    from {margin-left: 70%;}
     to {margin-left: 67%;}
 }
 
 @keyframes movimiento5 {
-    from {margin-left: -15%;}
+    from {margin-left: -5%;}
     to {margin-left: 10%;}
 }
 
@@ -59,12 +59,12 @@ main {
 }
 
 @keyframes movimiento7 {
-    from {margin-left: -15%;}
+    from {margin-left: -10%;}
     to {margin-left: 10%;}
 }
 
 @keyframes movimiento8 {
-    from {margin-left: -15%;}
+    from {margin-left: 5%;}
     to {margin-left: 30%;}
 }
 
