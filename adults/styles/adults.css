@@ -8,11 +8,22 @@ html {
     background-image: url("/img/bgAdults.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: url("/img/cursor1.png"),  auto;
 }
 
 body {
     position: relative;
 }
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mano.png"),  auto;
+}
+
+button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
 main {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -163,11 +174,6 @@ main {
     width: 180px;
     height: 90px;
 }
-
-a {
-    text-decoration: none;
-}
-
 
 .container {
     display: flex;
