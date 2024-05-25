@@ -9,7 +9,18 @@ html {
     background-image: url("/img/bgMinors.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: url("/img/cursor1.png"),  auto;
 }
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mano.png"),  auto;
+}
+
+button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
 @media (max-width: 400px){
     html{
         background-size: 390%;
@@ -307,3 +318,4 @@ main {
         flex-direction: column-reverse;
     }
 }
+

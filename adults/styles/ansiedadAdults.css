@@ -4,3 +4,19 @@
     box-sizing: border-box;
 }
 
+html {
+    cursor: url("/img/cursor1.png"),  auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mano.png"),  auto;
+}
+
+button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
+input:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
