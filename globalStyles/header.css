@@ -35,10 +35,9 @@ nav {
 
 .nav-links-hamburger{
     display: none;
-    opacity: 0;
-
-    transition: opacity 0.5s, display 0.5s;
 }
+
+
 
 .nav-links a{
     margin: 0 5%;
@@ -99,12 +98,14 @@ nav {
         top: 0;
         right: 0;
         height: 100%;
-        width: 50%;
-        background-color: greenyellow;
-        opacity: 1;
+        width: 30%;
+        background-color: #222222b2;
+        border-left: 1px solid black;
     }
     .hamburger-menu:checked + .nav-links-hamburger a{
         margin-bottom: 15px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
     }
     
 }
