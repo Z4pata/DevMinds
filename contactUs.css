@@ -10,6 +10,33 @@ body {
     display: flex;
 }
 
+label {
+    cursor: url("/img/cursor1.png"),  auto;
+}
+
+
+#button {
+    --bg: rgb(76, 110, 245);
+    --hover-bg: #2528e3;
+    --hover-text: #000;
+    cursor: url("/img/mano.png"), auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+#button:hover {
+    color: white;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+#button:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
 #form {
     position: absolute;
     top: 180px;
@@ -23,15 +50,18 @@ body {
 
 .field label {
     display: block;
-    font-size: 12px;
-    color: #777;
+    font-size: 15px;
+    color: black;
 }
 
 .field input {
     display: block;
-    min-width: 250px;
-    line-height: 1.5;
+    min-width: 280px;
+    line-height: 2.5;
     font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
 }
 
 input[type="submit"] {
@@ -40,7 +70,7 @@ input[type="submit"] {
     font-size: 14px;
     background-color: #4460AA;
     color: #fff;
-    border: none
+    border: none;
 }
 
 .nubes {
