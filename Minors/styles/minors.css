@@ -301,9 +301,16 @@ main {
 .containerBox {
     background-image: url(/img/objeto1.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: contain;
     width: 50%;
     height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.containerBox h1{
+    margin: 20px;
 }
 @media (max-width: 400px){
     .containerBox {
