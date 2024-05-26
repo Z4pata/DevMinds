@@ -18,22 +18,22 @@ body {
     a {
         text-decoration: none;
     }
+    
 }
 
 header {
     margin: 1rem;
+    margin-left: 0;
 }
 
 
 main {
     display: flex;
-    justify-content: center;
     margin: 1rem;
 }
 
 .section-book{
-    width: 80%;
-    height: 100%;
+    width: 100%;
     display: flex;
 }
 
@@ -42,12 +42,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
     
 }
 
 .containerButtons {
-    /* background-color: brown; */
     width: 70%;
     height: 400px;
     display: flex;
@@ -58,7 +56,6 @@ main {
 }
 
 .containerHearts {
-    /* background-color: yellow; */
     width: 25%;
     height: 400px;
     display: flex;
@@ -286,17 +283,24 @@ footer {
         display: none;
     }
 
+    header {
+    }
+
     .book-mobile {
-        background-color: #00000000;
+        background-color: #FFB1BE;
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 5px #000000;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
     }
 
     .page-mobile {
-        border: solid 5px #000000;
+        border: solid 1px #000000;
         border-radius: 15px;
         box-shadow: 0 0 5px rgb(41, 41, 41);
         display: flex;
         flex-direction: column; 
-        background-color: #FFB1BE;
+        background-color: #fdfae6;
         padding: 10px;
     }
 }
@@ -308,5 +312,19 @@ footer {
 }
 
 @media screen and (min-width: 769px) {
+    header {
+        margin-bottom: 0;
+    }
 
+    main {
+    height: 70vh;
+    }
+
+    .section-book {
+        margin-left: 300px;
+    }
+
+    footer {
+        margin: 0;
+    }
 }
