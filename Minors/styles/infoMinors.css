@@ -38,13 +38,18 @@ header {
 main {
     display: flex;
     justify-content: center;
+    height: 450px;
     margin: 1rem;
 }
 
+.book-mobile{
+    display: none;
+}
 .section-book{
-    width: 80%;
-    height: 100%;
+    width: 70%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -----------------------------------Buttons and hearts------------------------------------------- */
@@ -59,7 +64,6 @@ main {
 .containerButtons {
     /* background-color: brown; */
     width: 70%;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,12 +74,12 @@ main {
 .containerHearts {
     /* background-color: yellow; */
     width: 25%;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     align-items: center;
+    margin-left: 15%;
 }
 
 .container-buttons-hearts{
@@ -85,8 +89,8 @@ main {
 }
 
 .buttonFeel {
-    width: 140px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     justify-content: end;
     border-radius: 30px;
     background-color: #fdfae6;
@@ -378,6 +382,7 @@ main {
 }
 
 .nube3 {
+    display: none;
     position: absolute;
     top: 150px;
     width: 150px;
@@ -417,14 +422,13 @@ main {
     top: 470px;
     width: 180px;
     height: 90px;
-=======
-footer {
-    background-color: #000;
-    width: 100%;
 }
 
 /* ---------- RESPONSIVE --------- */
 @media screen and (max-width: 420px) {
+    .book-mobile {
+        display: inline-block;
+    }
     .section-book {
         display: none;
     }

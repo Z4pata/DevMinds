@@ -18,6 +18,7 @@ button:hover {
     position: relative;
     transition: 2s;
     perspective: 1500;
+    z-index: 2;
 }
 
 .checkbox {
