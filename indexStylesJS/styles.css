@@ -197,7 +197,11 @@ h1 {
 
  /* desktop */
  @media screen and (min-width: 769px) {
-
+    #btnLower {
+        a {
+            padding: 40px;
+        }
+    }
  }
 
  body {
@@ -345,3 +349,4 @@ h1 {
     width: 180px;
     height: 90px;
 }
+
