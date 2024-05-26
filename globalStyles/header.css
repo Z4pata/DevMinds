@@ -12,7 +12,6 @@ button:hover {
 }
 
 header {
-    /* background-color: aliceblue; */
     height: 40%;
     width: 100%;
 }
@@ -84,12 +83,13 @@ nav {
 .label-hamburger{
     display: none;
 }
-@media (max-width: 400px){
+@media screen and (max-width: 768px){
     .label-hamburger{
         display: inline-block;
         cursor: pointer;
         position:relative;
         right: 10px;
+        top: 3.5px;
         z-index: 1;
     }
     .nav-links{
@@ -97,10 +97,11 @@ nav {
     }
 
     .search{
+
         width: 40%;
     }
     .search-input{
-        width: 75%;
+        width: 70%;
     }
     .hamburger-menu:checked + .nav-links-hamburger{
         display: flex;

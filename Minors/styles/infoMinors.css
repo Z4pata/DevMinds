@@ -24,7 +24,7 @@ button:hover {
 body {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     a {
         text-decoration: none;
     }
@@ -32,8 +32,7 @@ body {
 }
 
 header {
-    margin: 1rem;
-    margin-left: 0;
+    margin-top: 15px;
 }
 
 
@@ -414,10 +413,6 @@ main {
     top: 470px;
     width: 180px;
     height: 90px;
-=======
-footer {
-    background-color: #000;
-    width: 100%;
 }
 
 /* ---------- RESPONSIVE --------- */
@@ -432,9 +427,6 @@ footer {
 
     .containerHearts {
         display: none;
-    }
-
-    header {
     }
 
     .book-mobile {
@@ -468,14 +460,10 @@ footer {
     }
 
     main {
-    height: 70vh;
+        height: 70vh;
     }
 
     .section-book {
         margin-left: 300px;
-    }
-
-    footer {
-        margin: 0;
     }
 }
