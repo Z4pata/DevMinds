@@ -15,6 +15,7 @@ header {
     /* background-color: aliceblue; */
     height: 40%;
     width: 100%;
+    margin-top: 0.8%;
 }
 
 nav {
@@ -35,7 +36,7 @@ nav {
 }
 
 .nav-logo{
-    width: 30%;
+    width: 20%;
     height: 45%;
 }
 
@@ -85,11 +86,14 @@ nav {
     display: none;
 }
 @media (max-width: 400px){
+    header {
+        margin-top: 0;
+    }
     .label-hamburger{
         display: inline-block;
         cursor: pointer;
         position:relative;
-        right: 10px;
+        right: 30px;
         z-index: 1;
     }
     .nav-links{
@@ -111,7 +115,7 @@ nav {
         top: 0;
         right: 0;
         height: 100%;
-        width: 30%;
+        width: 50%;
         background-color: #222222b2;
         border-left: 1px solid black;
     }
