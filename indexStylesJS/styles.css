@@ -162,7 +162,17 @@ h1 {
             padding: 15px;
         }
     }
- }
+    .nube6 {
+        display: none;
+    }
+    
+    .nube7 {
+        display: none;
+    }
+    .nube8 {
+        display: none;
+    }
+}
 
  /* tablet */
  @media screen and (min-width: 421px) {
@@ -196,14 +206,6 @@ h1 {
  }
 
  /* desktop */
- @media screen and (min-width: 769px) {
-    #btnLower {
-        a {
-            padding: 40px;
-        }
-    }
- }
-
  body {
     position: relative;
 }
@@ -316,6 +318,7 @@ h1 {
 }
 
 .nube4 {
+    display: none;
     position: absolute;
     top: 200px;
     width: 150px;
