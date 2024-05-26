@@ -3,16 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
-    font-family: "Jersey 10", sans-serif;
+    /* font-family: "Jersey 10", sans-serif;   Posible tipo de fuente*/
     background-image: url("/img/bgAdults.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     cursor: url("/img/cursor1.png"),  auto;
-}
-
-body {
-    position: relative;
 }
 
 a {
@@ -24,13 +21,36 @@ button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
-main {
-    margin-left: 1rem;
-    margin-right: 1rem;
+@media (max-width: 400px){
+    html{
+        background-size: 390%;
+    }
+}
+@media (max-width: 400px){
+    html{
+        background-size: 390%;
+    }
+}
+
+body {
     display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    a {
+        text-decoration: none;
+    }
+}
+
+main {
+    /* background-color: rgb(73, 64, 64); */
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
 .nubes {
@@ -175,58 +195,78 @@ main {
     height: 90px;
 }
 
+
+a {
+    text-decoration: none;
+}
+
+
+/* -----------------------------------Buttons and hearts------------------------------------------- */
+
+
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color: blue; */
     width: 100%;
-    height: 400px;
+    height: 100%;
     
 }
 
 .containerButtons {
     /* background-color: brown; */
     width: 45%;
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: end;
+    justify-content: end;
+    margin-right: 4%;
 }
-
-.containerBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    background-image: url(/img/objeto1.png);
-    background-repeat: no-repeat;
-    width: 21.3%;
-    height: 300px;
-}
-
-h1 {
-    font-size: 30px;
-}
-
 
 .containerHearts {
     /* background-color: yellow; */
     width: 5%;
-    height: 400px;
+    height: 100%;
     display: flex;
+    justify-content: end;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
+@media (max-width: 400px){
+    .containerHearts{
+        width: 23%;
+    }
+}
 
+.container-buttons-hearts{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
 
-button {
+.buttonFeel {
     width: 140px;
     height: 50px;
-    justify-content: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     background-color: #fdfae6;
     border: 2px solid black;
 }
+@media (max-width: 400px){
+    .buttonFeel{
+        font-size: 70%;
+        width: 100px;
+        height: 40px;
+    }
+
+}
+
 
 
 /* Animation buttons */
@@ -401,8 +441,189 @@ button {
     border: 2px solid black;
 }
 
-i {
+.heart {
     color: #fdfae6;
     font-size: 20px;
+}
+@media (max-width: 400px){
+    .heart{
+        font-size: 70%;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* -----------------------------------Image beside the buttons------------------------------------------- */
+.containerBox {
+    background-image: url(/img/objeto1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.containerBox h1{
+    margin: 18%;
+}
+@media (max-width: 400px){
+    .containerBox {
+        background-image: url(/img/objeto1.png);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        width: 71%;
+        height: 281px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .nubes {
+        background-image: url(/img/nube.png);
+        background-size: 100% 100%;
+        z-index: 2;
+    }
+    
+    @keyframes movimiento1 {
+        from {margin-left: 79%;}
+        to {margin-left: 65%;}
+    }
+    
+    @keyframes movimiento2 {
+        from {margin-left: 89%;}
+        to {margin-left: 80%;}
+    }
+    
+    @keyframes movimiento3 {
+        from {margin-left: 59%;}
+        to {margin-left: 75%;}
+    }
+    
+    @keyframes movimiento4 {
+        from {margin-left: 70%;}
+        to {margin-left: 67%;}
+    }
+    
+    @keyframes movimiento5 {
+        from {margin-left: -5%;}
+        to {margin-left: 10%;}
+    }
+    
+    @keyframes movimiento6 {
+        from {margin-left: -15%;}
+        to {margin-left: 23%;}
+    }
+    
+    @keyframes movimiento7 {
+        from {margin-left: -10%;}
+        to {margin-left: 10%;}
+    }
+    
+    @keyframes movimiento8 {
+        from {margin-left: 5%;}
+        to {margin-left: 30%;}
+    }
+    
+    .nubes:nth-child(1) {
+        background-image: url(/img/nube.png);
+        animation: movimiento1 6s linear forwards;
+    }
+    
+    .nubes:nth-child(2) {
+        background-image: url(/img/nube.png);
+        animation: movimiento2 6s linear forwards;
+    }
+    
+    .nubes:nth-child(3) {
+        background-image: url(/img/nube.png);
+        animation: movimiento3 6s linear forwards;
+    }
+    
+    .nubes:nth-child(4) {
+        background-image: url(/img/nube.png);
+        animation: movimiento4 6s linear forwards;
+    }
+    
+    .nubes:nth-child(5) {
+        background-image: url(/img/nube.png);
+        animation: movimiento5 6s linear forwards;
+    }
+    
+    .nubes:nth-child(6) {
+        background-image: url(/img/nube.png);
+        animation: movimiento6 6s linear forwards;
+    }
+    
+    .nubes:nth-child(7) {
+        background-image: url(/img/nube.png);
+        animation: movimiento7 6s linear forwards;
+    }
+    
+    .nubes:nth-child(8) {
+        background-image: url(/img/nube.png);
+        animation: movimiento8 6s linear forwards;
+    }
+    
+    .nube1 {
+        position: absolute;
+        top: 50px;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .nube2 {
+        position: absolute;
+        top: 100px;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .nube3 {
+        position: absolute;
+        top: 150px;
+        width: 150px;
+        height: 70px;
+    }
+    
+    .nube4 {
+        display: none;
+        position: absolute;
+        top: 200px;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .nube5 {
+        position: absolute;
+        top: 300px;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .nube6 {
+        display: none;
+        position: absolute;
+        top: 350px;
+        width: 170px;
+        height: 85px;
+    }
+    
+    .nube7 {
+        display: none;
+        position: absolute;
+        top: 420px;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .nube8 {
+        display: none;
+        position: absolute;
+        top: 470px;
+        width: 180px;
+        height: 90px;
+    }
 }
 
