@@ -1,3 +1,16 @@
+html {
+    cursor: url("/img/cursor1.png"),  auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mano.png"),  auto;
+}
+
+button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
 header {
     /* background-color: aliceblue; */
     height: 40%;
@@ -6,6 +19,7 @@ header {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -32,6 +46,12 @@ nav {
     height: 100%;
 }
 
+.nav-links-hamburger{
+    display: none;
+}
+
+
+
 .nav-links a{
     margin: 0 5%;
     color: black;
@@ -55,4 +75,50 @@ nav {
     padding: 4px;
     border: none;
     box-shadow: 0.25rem 0.25rem rgba(66, 66, 66, 0.596);
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.label-hamburger{
+    display: none;
+}
+@media (max-width: 400px){
+    .label-hamburger{
+        display: inline-block;
+        cursor: pointer;
+        position:relative;
+        right: 10px;
+        z-index: 1;
+    }
+    .nav-links{
+        display: none;
+    }
+
+    .search{
+        width: 40%;
+    }
+    .search-input{
+        width: 75%;
+    }
+    .hamburger-menu:checked + .nav-links-hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+        background-color: #222222b2;
+        border-left: 1px solid black;
+    }
+    .hamburger-menu:checked + .nav-links-hamburger a{
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
 }
