@@ -26,17 +26,22 @@ button:hover {
         background-size: 390%;
     }
 }
+@media (max-width: 400px){
+    html{
+        background-size: 390%;
+    }
+}
 
 body {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
     gap: 40px;
     position: relative;
+    width: 100%;
+    height: 100%;
     a {
         text-decoration: none;
     }
-    
 }
 
 main {
@@ -47,7 +52,6 @@ main {
     justify-content: space-evenly;
     align-items: center;
 }
-
 
 .nubes {
     background-image: url(/img/nube.png);
@@ -190,6 +194,15 @@ main {
     width: 180px;
     height: 90px;
 }
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* -----------------------------------Buttons and hearts------------------------------------------- */
+
 
 .container {
     display: flex;
@@ -438,7 +451,6 @@ main {
         width: 40px;
         height: 40px;
     }
-
 }
 
 /* -----------------------------------Image beside the buttons------------------------------------------- */
@@ -451,26 +463,21 @@ main {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+}
+.containerBox h1{
+    margin: 18%;
 }
 @media (max-width: 400px){
     .containerBox {
         background-image: url(/img/objeto1.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+        background-size: 110%;
+        width: 71%;
+        height: 281px;
     }
     .container {
         display: flex;
         flex-direction: column-reverse;
-    }
-    body {
-        position: relative;
     }
     
     .nubes {
@@ -581,6 +588,7 @@ main {
     }
     
     .nube4 {
+        display: none;
         position: absolute;
         top: 200px;
         width: 150px;
@@ -595,6 +603,7 @@ main {
     }
     
     .nube6 {
+        display: none;
         position: absolute;
         top: 350px;
         width: 170px;
@@ -602,6 +611,7 @@ main {
     }
     
     .nube7 {
+        display: none;
         position: absolute;
         top: 420px;
         width: 150px;
@@ -609,6 +619,7 @@ main {
     }
     
     .nube8 {
+        display: none;
         position: absolute;
         top: 470px;
         width: 180px;
