@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    cursor: url("/img/cursor1.png"),  auto;
+    background-image: url("/img/bgGames.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mano.png"),  auto;
+}
+
+button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
+input:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
+body {
+    position: relative;
+}
+
+.nubes {
+    background-image: url(/img/nube.png);
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+@keyframes movimiento1 {
+    from {margin-left: 79%;}
+    to {margin-left: 65%;}
+}
+
+@keyframes movimiento2 {
+    from {margin-left: 89%;}
+    to {margin-left: 80%;}
+}
+
+@keyframes movimiento3 {
+    from {margin-left: 59%;}
+    to {margin-left: 75%;}
+}
+
+@keyframes movimiento4 {
+    from {margin-left: 70%;}
+    to {margin-left: 67%;}
+}
+
+@keyframes movimiento5 {
+    from {margin-left: -5%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento6 {
+    from {margin-left: -15%;}
+    to {margin-left: 23%;}
+}
+
+@keyframes movimiento7 {
+    from {margin-left: -10%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento8 {
+    from {margin-left: 5%;}
+    to {margin-left: 30%;}
+}
+
+.nubes:nth-child(1) {
+    background-image: url(/img/nube.png);
+    animation: movimiento1 6s linear forwards;
+}
+
+.nubes:nth-child(2) {
+    background-image: url(/img/nube.png);
+    animation: movimiento2 6s linear forwards;
+}
+
+.nubes:nth-child(3) {
+    background-image: url(/img/nube.png);
+    animation: movimiento3 6s linear forwards;
+}
+
+.nubes:nth-child(4) {
+    background-image: url(/img/nube.png);
+    animation: movimiento4 6s linear forwards;
+}
+
+.nubes:nth-child(5) {
+    background-image: url(/img/nube.png);
+    animation: movimiento5 6s linear forwards;
+}
+
+.nubes:nth-child(6) {
+    background-image: url(/img/nube.png);
+    animation: movimiento6 6s linear forwards;
+}
+
+.nubes:nth-child(7) {
+    background-image: url(/img/nube.png);
+    animation: movimiento7 6s linear forwards;
+}
+
+.nubes:nth-child(8) {
+    background-image: url(/img/nube.png);
+    animation: movimiento8 6s linear forwards;
+}
+
+.nube1 {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube2 {
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube3 {
+    position: absolute;
+    top: 150px;
+    width: 150px;
+    height: 70px;
+}
+
+.nube4 {
+    position: absolute;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube5 {
+    position: absolute;
+    top: 300px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube6 {
+    position: absolute;
+    top: 350px;
+    width: 170px;
+    height: 85px;
+}
+
+.nube7 {
+    position: absolute;
+    top: 420px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube8 {
+    position: absolute;
+    top: 470px;
+    width: 180px;
+    height: 90px;
+}
