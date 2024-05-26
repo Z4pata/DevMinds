@@ -35,9 +35,10 @@ button:hover {
 body {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
     gap: 40px;
     position: relative;
+    width: 100%;
+    height: 100%;
     a {
         text-decoration: none;
     }
@@ -462,26 +463,21 @@ a {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+}
+.containerBox h1{
+    margin: 18%;
 }
 @media (max-width: 400px){
     .containerBox {
         background-image: url(/img/objeto1.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+        background-size: 110%;
+        width: 71%;
+        height: 281px;
     }
     .container {
         display: flex;
         flex-direction: column-reverse;
-    }
-    body {
-        position: relative;
     }
     
     .nubes {
@@ -592,6 +588,7 @@ a {
     }
     
     .nube4 {
+        display: none;
         position: absolute;
         top: 200px;
         width: 150px;
@@ -606,6 +603,7 @@ a {
     }
     
     .nube6 {
+        display: none;
         position: absolute;
         top: 350px;
         width: 170px;
@@ -613,6 +611,7 @@ a {
     }
     
     .nube7 {
+        display: none;
         position: absolute;
         top: 420px;
         width: 150px;
@@ -620,6 +619,7 @@ a {
     }
     
     .nube8 {
+        display: none;
         position: absolute;
         top: 470px;
         width: 180px;
