@@ -1,5 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     cursor: url("/img/cursor1.png"),  auto;
+    background-image: url("/img/bgForo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -8,6 +17,10 @@ a {
 }
 
 button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
+input:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
