@@ -1,3 +1,16 @@
+html {
+    cursor: url("/img/cursor1.png"),  auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mano.png"),  auto;
+}
+
+button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
 
 .book{
     width: 40%;
