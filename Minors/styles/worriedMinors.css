@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    gap: 40px;
+    gap: 20px;
     a {
         text-decoration: none;
     }
