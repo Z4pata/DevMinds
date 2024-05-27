@@ -188,6 +188,7 @@ main {
     height: 90px;
 }
 
+
 @media screen and (max-width: 420px){
     .section-book {
         display: none;

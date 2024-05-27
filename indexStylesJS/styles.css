@@ -24,6 +24,10 @@ body {
     justify-content: center;
 }
 
+a {
+    height: 90px;
+    width: 200px;
+}
 
 main {
     display: flex;

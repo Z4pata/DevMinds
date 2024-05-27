@@ -5,7 +5,7 @@
 }
 
 html {
-    /* font-family: "Jersey 10", sans-serif;   Posible tipo de fuente*/
+    font-family: "Jersey 10", sans-serif;  
     background-image: url("/img/bgMinors.jpg");
     background-repeat: no-repeat;
     background-size: cover;

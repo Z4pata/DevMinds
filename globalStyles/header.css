@@ -7,13 +7,34 @@ a {
     cursor: url("/img/mano.png"),  auto;
 }
 
+.links {
+    line-height: 2;
+    position: relative;
+}
+
+.links::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -.25rem;
+    left: 50%;
+    transition: width .4s, left .4s;
+}
+
+.links:hover::before {
+    width: 100%;
+    left: 0;
+}
+
 button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
 header {
     height: 40%;
-    width: 100%;
     margin-top: 0.8%;
 }
 
@@ -123,6 +144,7 @@ nav {
         width: 50%;
         background-color: #222222b2;
         border-left: 1px solid black;
+        z-index: 1;
     }
     .hamburger-menu:checked + .nav-links-hamburger a{
         margin-bottom: 15px;
