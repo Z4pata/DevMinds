@@ -46,6 +46,7 @@ main {
 .book-mobile{
     display: none;
 }
+
 .section-book{
     display: flex;
     justify-content: end;

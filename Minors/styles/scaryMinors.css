@@ -231,10 +231,60 @@ main {
         background-color: #fdfae6;
         padding: 10px;
     }
+
+    .nube8 {
+        position: absolute;
+        top: 100px;
+    }
+
+    .nube7 {
+        position: absolute;
+        top: 400px;
+    }
 }
 
 @media screen and (min-width: 421px) {
     .book-mobile {
         display: none;
+    }
+
+    .section-book {
+        width: 500px;
+    }
+
+    .nube8 {
+        position: absolute;
+        top: 100px;
+    }
+
+    .nube7 {
+        position: absolute;
+        top: 400px;
+    }
+
+    @keyframes movimiento1 {
+        from {margin-left: 59%;}
+        to {margin-left: 45%;}
+    }
+    
+    @keyframes movimiento2 {
+        from {margin-left: 69%;}
+        to {margin-left: 60%;}
+    }
+    
+    @keyframes movimiento3 {
+        from {margin-left: 50%;}
+        to {margin-left: 70%;}
+    }
+    
+    @keyframes movimiento4 {
+        from {margin-left: 72%;}
+        to {margin-left: 54%;}
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-book {
+        width: 90%;
     }
 }
