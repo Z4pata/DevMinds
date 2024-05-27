@@ -14,7 +14,7 @@ html{
 }
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: "area1 area2";
     height: 80vh;
 }
@@ -186,22 +186,36 @@ main{
 
 /* -----------------------------------left site images----------------------------------------------- */
 
+.images-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:"empty img1 img2 img2"
+                        "empty img1 img2 img2"
+                        "img3 img3 img2 img2"
+                        "img3 img3 img2 img2"
+                        "img3 img3 img4 img4";
+}
+
 
 .image1{
     background-image: url(/img/objeto1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 50%;
-    height: 40%;
-}
-
-.empty {
-    width: 50%;
+    grid-area: img1;
 }
 
 .image2 {
     background-image: url(/img/objeto1.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: img2;
+}
+.image3 {
+    background-image: url(/img/objeto1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: img3;
 }
 
 /* -----------------------------------Buttons and hearts------------------------------------------- */
