@@ -38,9 +38,8 @@ header {
 
 
 main {
-    display: flex;
-
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 450px;
     margin: 1rem;
 }
@@ -49,10 +48,13 @@ main {
     display: none;
 }
 .section-book{
-    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+}
+
+.cover, .back-cover {
+    background-color: #a2e02d;
 }
 
 /* -----------------------------------Buttons and hearts------------------------------------------- */
@@ -281,6 +283,8 @@ main {
     font-size: 20px;
 }
 
+/* -------------------------------------Clouds images/animations------------------------------------------------ */
+
 .nubes {
     background-image: url(/img/nube.png);
     background-size: 100% 100%;
@@ -473,9 +477,5 @@ main {
 
     main {
         height: 70vh;
-    }
-
-    .section-book {
-        margin-left: 300px;
     }
 }
