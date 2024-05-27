@@ -2,6 +2,17 @@ html {
     cursor: url("/img/cursor1.png"),  auto;
 }
 
+html{
+    background-image: url(/img/bgAdults.jpg);
+    background-size: cover;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "area1 area2";
+    height: 80vh;
+}
+
 a {
     text-decoration: none;
     cursor: url("/img/mano.png"),  auto;
@@ -101,6 +112,398 @@ body {
     animation: movimiento8 6s linear forwards;
 }
 
+.nube1 {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube2 {
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube3 {
+    position: absolute;
+    top: 150px;
+    width: 150px;
+    height: 70px;
+}
+
+.nube4 {
+    position: absolute;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube5 {
+    position: absolute;
+    top: 300px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube6 {
+    position: absolute;
+    top: 350px;
+    width: 170px;
+    height: 85px;
+}
+
+.nube7 {
+    position: absolute;
+    top: 420px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube8 {
+    position: absolute;
+    top: 470px;
+    width: 180px;
+    height: 90px;
+}
+
+/* -----------------------------------Buttons and hearts------------------------------------------- */
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    grid-area: area2;
+}
+
+.containerButtons {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    justify-content: end;
+    margin-right: 4%;
+}
+
+.containerHearts {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 4px;
+    align-items: center;
+}
+@media (max-width: 400px){
+    .containerHearts{
+        width: 23%;
+    }
+}
+
+.container-buttons-hearts{
+    display: flex;
+}
+
+.buttonFeel {
+    width: 140px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #fdfae6;
+    border: 2px solid black;
+}
+@media (max-width: 400px){
+    .buttonFeel{
+        font-size: 70%;
+        width: 100px;
+        height: 40px;
+    }
+
+}
+
+
+
+/* Animation buttons */
+
+/* Anxiety button */
+.buttonAnxiety {
+    --bg: #fdfae6;
+    --hover-bg: #004aad;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonAnxiety:hover {
+    color: #fdfae6;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonAnxiety:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Depression button */
+.buttonDepression {
+    --bg: #fdfae6;
+    --hover-bg: #a6ff2d;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonDepression:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonDepression:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Fear button */
+.buttonFear {
+    --bg: #fdfae6;
+    --hover-bg: #ff66c4;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonFear:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonFear:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Frustration button */
+.buttonFrustration {
+    --bg: #fdfae6;
+    --hover-bg: #737373;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonFrustration:hover {
+    color: #fdfae6;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonFrustration:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+/* Imposter syndrom button */
+.buttonSyndrom {
+    --bg: #fdfae6;
+    --hover-bg: #ff3131;
+    --hover-text: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.buttonSyndrom:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.buttonSyndrom:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.heartAnsiedad {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.heartDepresion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6ff2d;
+    border: 2px solid black;
+}
+
+.heartMiedo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff66c4;
+    border: 2px solid black;
+}
+
+.heartFrustracion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #737373;
+    border: 2px solid black;
+}
+
+.heartSindrome {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3131;
+    border: 2px solid black;
+}
+
+.heart {
+    color: #fdfae6;
+    font-size: 20px;
+}
+@media (max-width: 400px){
+    .heart{
+        font-size: 70%;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Clouds */
+.nubes {
+    background-image: url(/img/nube.png);
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+/* Clouds Movements */
+@keyframes movimiento1 {
+    from {margin-left: 79%;}
+    to {margin-left: 65%;}
+}
+
+@keyframes movimiento2 {
+    from {margin-left: 89%;}
+    to {margin-left: 80%;}
+}
+
+@keyframes movimiento3 {
+    from {margin-left: 59%;}
+    to {margin-left: 35%;}
+}
+
+@keyframes movimiento4 {
+    from {margin-left: 50%;}
+    to {margin-left: 80%;}
+}
+
+@keyframes movimiento5 {
+    from {margin-left: -5%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento6 {
+    from {margin-left: -15%;}
+    to {margin-left: 23%;}
+}
+
+@keyframes movimiento7 {
+    from {margin-left: -10%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento8 {
+    from {margin-left: 5%;}
+    to {margin-left: 30%;}
+}
+
+/* Clouds integrate Movements */
+.nubes:nth-child(1) {
+    background-image: url(/img/nube.png);
+    animation: movimiento1 6s linear forwards;
+}
+
+.nubes:nth-child(2) {
+    background-image: url(/img/nube.png);
+    animation: movimiento2 6s linear forwards;
+}
+
+.nubes:nth-child(3) {
+    background-image: url(/img/nube.png);
+    animation: movimiento3 6s linear forwards;
+}
+
+.nubes:nth-child(4) {
+    background-image: url(/img/nube.png);
+    animation: movimiento4 6s linear forwards;
+}
+
+.nubes:nth-child(5) {
+    background-image: url(/img/nube.png);
+    animation: movimiento5 6s linear forwards;
+}
+
+.nubes:nth-child(6) {
+    background-image: url(/img/nube.png);
+    animation: movimiento6 6s linear forwards;
+}
+
+.nubes:nth-child(7) {
+    background-image: url(/img/nube.png);
+    animation: movimiento7 6s linear forwards;
+}
+
+.nubes:nth-child(8) {
+    background-image: url(/img/nube.png);
+    animation: movimiento8 6s linear forwards;
+}
+
+/* clouds positions */
 .nube1 {
     position: absolute;
     top: 50px;
