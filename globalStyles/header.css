@@ -58,6 +58,7 @@ nav {
 }
 
 .search{
+    display: flex;
     width: 20%;
     height: 100%;
 }
@@ -85,7 +86,7 @@ nav {
     display: none;
 }
 
-@media (max-width: 400px){
+@media (max-width: 768px){
     header {
         margin-top: 0;
     }

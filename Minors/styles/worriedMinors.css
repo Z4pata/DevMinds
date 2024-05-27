@@ -7,7 +7,6 @@
 html {
     /* font-family: "Jersey 10", sans-serif;   Posible tipo de fuente*/
     background-image: url("/img/bgMinors.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     cursor: url("/img/cursor1.png"),  auto;
 }
@@ -19,12 +18,6 @@ a {
 
 button:hover {
     cursor: url("/img/mano.png"),  auto;
-}
-
-@media (max-width: 400px){
-    html{
-        background-size: 390%;
-    }
 }
 
 body {
@@ -44,16 +37,13 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 .section-book{
     width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-body {
-    position: relative;
 }
 
 .nubes {
@@ -196,4 +186,35 @@ body {
     top: 470px;
     width: 180px;
     height: 90px;
+}
+
+@media screen and (max-width: 420px){
+    .section-book {
+        display: none;
+    }
+
+    
+    .book-mobile {
+        background-color: #FFB1BE;
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 5px #000000;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
+    }
+
+    .page-mobile {
+        border: solid 1px #000000;
+        border-radius: 15px;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
+        display: flex;
+        flex-direction: column; 
+        background-color: #fdfae6;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 421px) {
+    .book-mobile {
+        display: none;
+    }
 }
