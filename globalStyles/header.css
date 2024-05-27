@@ -35,7 +35,6 @@ button:hover {
 
 header {
     height: 40%;
-    width: 100%;
     margin-top: 0.8%;
 }
 
@@ -144,6 +143,7 @@ nav {
         width: 50%;
         background-color: #222222b2;
         border-left: 1px solid black;
+        z-index: 1;
     }
     .hamburger-menu:checked + .nav-links-hamburger a{
         margin-bottom: 15px;
