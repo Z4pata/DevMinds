@@ -5,10 +5,11 @@
 }
 
 html {
-    cursor: url("/img/cursor1.png"),  auto;
-    background-image: url("/img/bgAdults.jpg");
+    /* font-family: "Jersey 10", sans-serif;   Posible tipo de fuente*/
+    background-image: url("/img/bgMinors.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: url("/img/cursor1.png"),  auto;
 }
 
 a {
@@ -16,44 +17,43 @@ a {
     cursor: url("/img/mano.png"),  auto;
 }
 
-
 button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
-.cover, .back-cover {
-    background-color: #004aad;
+@media (max-width: 400px){
+    html{
+        background-size: 390%;
+    }
 }
 
-.emotion {
-    font-size: 1rem;
-    padding: 0.8em 2em;
-    background-color: #004aad;
-    border: 3px solid black;
-    border-radius: 1em;
-    color: #fff;
-    font-weight: bolder;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-    box-shadow: -5px 5px 0px 0px black;
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 40px;
+    a {
+        text-decoration: none;
+    }
 }
 
-.emotion:hover {
-    transform: translate(5px, -5px);
+main {
+    padding: 1rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-input:hover {
-    cursor: url("/img/mano.png"),  auto;
+.section-book{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-main{
-    width: 100%;
-    height: 50%;
 }
 
 .nubes {
@@ -196,8 +196,4 @@ main{
     top: 470px;
     width: 180px;
     height: 90px;
-}
-
-.section-book{
-    height: 100%;
 }
