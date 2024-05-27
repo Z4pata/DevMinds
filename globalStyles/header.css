@@ -7,12 +7,33 @@ a {
     cursor: url("/img/mano.png"),  auto;
 }
 
+.links {
+    line-height: 2;
+    position: relative;
+}
+
+.links::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -.25rem;
+    left: 50%;
+    transition: width .4s, left .4s;
+}
+
+.links:hover::before {
+    width: 100%;
+    left: 0;
+}
+
 button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
 header {
-    /* background-color: aliceblue; */
     height: 40%;
     margin-top: 0.8%;
 }
@@ -84,15 +105,19 @@ nav {
 .label-hamburger{
     display: none;
 }
+
 @media (max-width: 400px){
     header {
         margin-top: 0;
     }
+
     .label-hamburger{
         display: inline-block;
         cursor: pointer;
         position:relative;
-        right: 30px;
+        right: 10px;
+        top: 3.5px;
+
         z-index: 1;
     }
     .nav-links{
@@ -100,10 +125,11 @@ nav {
     }
 
     .search{
+
         width: 40%;
     }
     .search-input{
-        width: 75%;
+        width: 70%;
     }
     .hamburger-menu:checked + .nav-links-hamburger{
         display: flex;
