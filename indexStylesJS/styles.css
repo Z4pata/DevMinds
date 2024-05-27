@@ -47,8 +47,6 @@ main {
     align-items: center;
     border: solid 8px black;
     padding: 30px;
-    width: 50%;
-    height: 50vh;
     background-color: #fdfae6;
 }
 
@@ -66,6 +64,7 @@ h1 {
 
 /* btn under 18 */
 #btnLower {
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,6 +97,7 @@ h1 {
 
  /* btn over 18 */
 #btnHigher {
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +130,7 @@ h1 {
 
  /* ---------- RESPONSIVE ---------- */
 
- /* cellphone */
+ /* mobile */
  @media screen and (max-width: 420px) {
     main {
         flex-direction: column;
