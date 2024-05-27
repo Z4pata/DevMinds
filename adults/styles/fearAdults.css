@@ -21,16 +21,16 @@ button:hover {
 }
 
 .cover, .back-cover {
-    background-color: #ff8200;
+    background-color: #ff66c4;
 }
 
 .emotion {
     font-size: 1rem;
     padding: 0.8em 2em;
-    background-color: #ff8200;
+    background-color: #ff66c4;
     border: 3px solid black;
     border-radius: 1em;
-    color: #fff;
+    color: black;
     font-weight: bolder;
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
     box-shadow: -5px 5px 0px 0px black;

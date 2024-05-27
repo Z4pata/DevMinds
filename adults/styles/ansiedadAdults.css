@@ -22,13 +22,13 @@ button:hover {
 }
 
 .cover, .back-cover {
-    background-color: #ff8200;
+    background-color: #004aad;
 }
 
 .emotion {
     font-size: 1rem;
     padding: 0.8em 2em;
-    background-color: #ff8200;
+    background-color: #004aad;
     border: 3px solid black;
     border-radius: 1em;
     color: #fff;
