@@ -1,5 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     cursor: url("/img/cursor1.png"),  auto;
+    background-image: url("/img/bgAdults.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -11,8 +20,19 @@ button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
+input:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
 body {
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 50%;
 }
 
 .nubes {
@@ -155,4 +175,8 @@ body {
     top: 470px;
     width: 180px;
     height: 90px;
+}
+
+.section-book{
+    height: 100%;
 }
