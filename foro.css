@@ -6,9 +6,15 @@
 
 html {
     cursor: url("/img/cursor1.png"),  auto;
-    background-image: url("/img/bgForo.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 a {
@@ -62,7 +68,7 @@ body {
 
 @keyframes movimiento5 {
     from {margin-left: -5%;}
-    to {margin-left: 10%;}
+    to {margin-left: 40%;}
 }
 
 @keyframes movimiento6 {
@@ -121,56 +127,57 @@ body {
 }
 
 .nube1 {
-    position: absolute;
+    position: fixed;
     top: 50px;
     width: 150px;
     height: 50px;
 }
 
 .nube2 {
-    position: absolute;
+    position: fixed;
     top: 100px;
     width: 150px;
     height: 50px;
 }
 
 .nube3 {
-    position: absolute;
+    position: fixed;
     top: 150px;
     width: 150px;
     height: 70px;
 }
 
 .nube4 {
-    position: absolute;
+    position: fixed;
     top: 200px;
     width: 150px;
     height: 50px;
+    z-index: 0;
 }
 
 .nube5 {
-    position: absolute;
+    position: fixed;
     top: 300px;
     width: 150px;
     height: 50px;
 }
 
 .nube6 {
-    position: absolute;
+    position: fixed;
     top: 350px;
     width: 170px;
     height: 85px;
 }
 
 .nube7 {
-    position: absolute;
+    position: fixed;
     top: 420px;
     width: 150px;
     height: 50px;
 }
 
 .nube8 {
-    position: absolute;
+    position: fixed;
     top: 470px;
     width: 180px;
     height: 90px;
@@ -197,13 +204,67 @@ body {
     resize: none;
     padding: 15px;
     border-radius: 50px;
-    background-color: rgba(137, 43, 226, 0.521);
+    background-color: #fdfae6;
+    border: 2px solid black;
+    z-index: 2;
 }
 
 .textarea::-webkit-scrollbar {
     display: none;
-    }
+}
 
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardComment {
+    background-color: #fdfae6;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    width: 30%;
+    height: 300px;
+    z-index: 2;
+}
+
+.sectionContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "col1 col2";
+    height: 70%;
+}
+
+.commentContent {
+    grid-area: col2;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 100%;
+    padding: 10px;
+}
+
+.headerCard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.happyFace {
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.replyButton {
+    border: none;
+    background-color: #fdfae6;
+}
 
 
 footer {
