@@ -11,6 +11,31 @@ html {
     background-size: cover;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 40px;
+    a {
+        text-decoration: none;
+    }
+}
+
+main {
+    padding: 1rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-book{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     cursor: url("/img/mano.png"),  auto;
@@ -20,12 +45,28 @@ button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
-input:hover {
-    cursor: url("/img/mano.png"),  auto;
+.cover, .back-cover {
+    background-color: #a6ff2d;
 }
 
-body {
-    position: relative;
+.emotion {
+    font-size: 1rem;
+    padding: 0.8em 2em;
+    background-color: #a6ff2d;
+    border: 3px solid black;
+    border-radius: 1em;
+    color: black;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -5px 5px 0px 0px black;
+}
+
+.emotion:hover {
+    transform: translate(5px, -5px);
+}
+
+input:hover {
+    cursor: url("/img/mano.png"),  auto;
 }
 
 .nubes {

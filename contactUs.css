@@ -1,5 +1,4 @@
 html {
-    font-family: "Jersey 10", sans-serif;
     background-image: url("../img/bgIndex.jpg");
     background-repeat: no-repeat;
     display: flex;
@@ -8,6 +7,12 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    position: relative;
+    a {
+        text-decoration: none;
+    }
 }
 
 label {

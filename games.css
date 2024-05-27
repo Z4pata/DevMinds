@@ -25,7 +25,13 @@ input:hover {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
     position: relative;
+    a {
+        text-decoration: none;
+    }
 }
 
 .nubes {
