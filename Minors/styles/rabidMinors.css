@@ -11,8 +11,6 @@ html {
     cursor: url("/img/cursor1.png"),  auto;
 }
 
-
-
 a {
     text-decoration: none;
     cursor: url("/img/mano.png"),  auto;
@@ -45,7 +43,8 @@ button:hover {
 body {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 20px;
+    margin-bottom: 15px;
     gap: 20px;
     a {
         text-decoration: none;
@@ -53,11 +52,10 @@ body {
 }
 
 main {
-    padding: 1rem;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .section-book{
@@ -170,7 +168,7 @@ main {
 
 .nube3 {
     position: absolute;
-    top: 150px;
+    top: 250px;
     width: 150px;
     height: 70px;
 }
@@ -234,18 +232,16 @@ main {
         padding: 10px;
     }
 
-    .nube8 {
-        position: absolute;
-        top: 100px;
-    }
-
-    .nube7 {
-        position: absolute;
-        top: 400px;
+    .nubes {
+        display: none;
     }
 }
 
 @media screen and (min-width: 421px) {
+    main {
+        height: 75vh;
+    }
+
     .book-mobile {
         display: none;
     }
@@ -265,28 +261,37 @@ main {
     }
 
     @keyframes movimiento1 {
-        from {margin-left: 59%;}
-        to {margin-left: 45%;}
+        from {margin-left: 15%;}
+        to {margin-left: 60%;}
     }
     
     @keyframes movimiento2 {
         from {margin-left: 69%;}
-        to {margin-left: 60%;}
+        to {margin-left: 1%;}
     }
     
     @keyframes movimiento3 {
-        from {margin-left: 50%;}
-        to {margin-left: 70%;}
+        from {margin-left: 10%;}
+        to {margin-left: 65%;}
     }
     
     @keyframes movimiento4 {
-        from {margin-left: 72%;}
-        to {margin-left: 54%;}
+        from {margin-left: 45%;}
+        to {margin-left: 62%;}
     }
 }
 
 @media screen and (min-width: 768px) {
     .section-book {
         width: 90%;
+    }
+
+    main {
+        padding-top: 10px;
+    }
+    
+    @keyframes movimiento3 {
+        from {margin-left: 10%;}
+        to {margin-left: 80%;}
     }
 }
