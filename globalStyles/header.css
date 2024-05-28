@@ -66,10 +66,12 @@ nav {
 }
 
 .nav-links{
+    margin-left: 60px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     width: 50%;
     height: 100%;
+    gap: 35px;
 }
 
 .nav-links-hamburger{
@@ -79,7 +81,6 @@ nav {
 
 
 .nav-links a{
-    margin: 0 5%;
     color: black;
 }
 
