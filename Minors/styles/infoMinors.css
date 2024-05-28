@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    box-sizing: inherit;
 }
 
 html {
+
     background-image: url("/img/bgMinors.jpg");
     background-size: cover;
     cursor: url("/img/cursor1.png"),  auto;
@@ -23,18 +23,13 @@ button:hover {
 body {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 20px;
+    margin-bottom: 15px;
     gap: 20px;
     a {
         text-decoration: none;
     }
-    
 }
-
-header {
-    margin-top: 15px;
-}
-
 
 main {
     display: grid;
