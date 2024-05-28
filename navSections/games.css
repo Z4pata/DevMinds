@@ -34,6 +34,37 @@ body {
     }
 }
 
+main {
+    height: 77vh;
+    margin-top: 40px;
+}
+
+.div-3buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonGame {
+    font-size: 1rem;
+    padding: 0.8em 2em;
+    background-color: #e4c330;
+    border: 3px solid black;
+    border-radius: 1em;
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -5px 5px 0px 0px black;
+}
+
+.buttonGame:hover {
+    transform: translate(5px, -5px);
+}
+
+.buttonGame a {
+    text-decoration: none;
+    color: black;
+}
+
 .nubes {
     background-image: url(/img/nube.png);
     background-size: 100% 100%;
