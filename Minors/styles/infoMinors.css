@@ -60,6 +60,12 @@ main {
     
 }
 
+.container-buttons-hearts{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
 .containerButtons {
     width: 70%;
     display: flex;
@@ -79,16 +85,12 @@ main {
     margin-left: 15%;
 }
 
-.container-buttons-hearts{
-    display: flex;
-    width: 50%;
-    justify-content: end;
-}
-
 .buttonFeel {
-    width: 100px;
-    height: 30px;
-    justify-content: end;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     background-color: #fdfae6;
     border: 2px solid black;
