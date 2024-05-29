@@ -213,12 +213,16 @@ body {
     display: none;
 }
 
+.commentANDreply{
+    z-index: 3;
+    display: flex;
+}
 
-.comments {
+/* .comments {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .cardComment {
     background-color: #fdfae6;
@@ -266,6 +270,46 @@ svg {
     background-color: #fdfae6;
 }
 
+.hide{
+    display: none;
+}
+
+.div-replyForm {
+    background-color: #fdfae6;
+    position: fixed;
+    top: 50%;
+    right: 35%;
+    height: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.replyForm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.reply-input {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cardReply{
+    background-color: #ffed79;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    width: 20%;
+    height: 300px;
+    z-index: 2;
+    margin-left: 2%;
+}
 
 footer {
     bottom: 0;

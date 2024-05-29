@@ -7,6 +7,10 @@ const button = document.querySelector("#button_submit");
 const idUser = document.querySelector("#idUser");
 const comments = document.querySelector("#comments");
 const commentsRight = document.querySelector("#commentsRight");
+const div_hide = document.querySelector("#div_hide");
+const replyForm = document.querySelector("#replyForm");
+const reply_input = document.querySelector("#reply_input");
+
 
 
 // Event Listeners
@@ -18,19 +22,17 @@ form.addEventListener("submit",(event)=>{
     event.preventDefault()
     event.stopPropagation()
     addComment()
-
-    
 })
 
-
+comments.addEventListener("click", (event)=>{
+    addReply(event)
+})
 
 // Functions
 async function addComment(){
-    
     const newComment = {
         comment: textarea.value
     }
-
     await fetch(URLComments,{
         method: "POST",
         headers: {"Content-type": "application/json"},
@@ -44,16 +46,53 @@ async function getComment(){
     console.log(data);
     data.forEach(comment => {
         comments.innerHTML += `
-        <div class="cardComment">
-            <div class="headerCard">
-                <div class="happyFace"><i class="fa-regular fa-face-smile fa-4x"></i></div>
-                <span>Traveller#${comment.id}</span>
-                <button class="replyButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M205 34.8c11.5 5.1 19 16.6 19 29.2v64H336c97.2 0 176 78.8 176 176c0 113.3-81.5 163.9-100.2 174.1c-2.5 1.4-5.3 1.9-8.1 1.9c-10.9 0-19.7-8.9-19.7-19.7c0-7.5 4.3-14.4 9.8-19.5c9.4-8.8 22.2-26.4 22.2-56.7c0-53-43-96-96-96H224v64c0 12.6-7.4 24.1-19 29.2s-25 3-34.4-5.4l-160-144C3.9 225.7 0 217.1 0 208s3.9-17.7 10.6-23.8l160-144c9.4-8.5 22.9-10.6 34.4-5.4z"/></svg></button>
+        <div class="commentANDreply">
+            <div class="cardComment">
+                <div class="headerCard">
+                    <div class="happyFace"><i class="fa-regular fa-face-smile fa-4x"></i></div>
+                    <span>Traveller#${comment.id}</span>
+                    <button class="replyButton">reply</button>
+                </div>
+                <div class="sectionContent">
+                    <div class="commentContent">${comment.comment}</div>
+                </div>
             </div>
-            <div class="sectionContent">
-                <div class="commentContent">${comment.comment}</div>
-            </div>
-        </div>`;
-        
+        </div>
+        `;
     });
+    
+}
+
+function addReply(event){
+    // I decare what i click as a variable
+    const evento = event.target;
+
+    // I check if what i clicked on has the replyButton class
+    if (evento.classList.contains("replyButton")){
+        // show de form of reply
+        div_hide.classList.remove("hide");
+
+            // when the form is submitted
+        replyForm.addEventListener("submit", (event)=>{
+            event.preventDefault()
+
+            // Hide the form of reply
+            div_hide.classList.add("hide");
+
+            const padre = evento.parentNode;
+            const abuelo = padre.parentNode;
+            const cardReply = `
+            <div class="cardReply">
+            <h3>Reply from Traveller</h3>
+                <div class="headerReply">
+                    <div><i class="fa-regular fa-face-smile fa-4x"></i></div>
+                </div>
+                <span>${reply_input.value}</span>
+            </div>`;
+            abuelo.parentNode.innerHTML += cardReply;
+            reply_input.value = "";
+        })
+    }
+
+    
 }
