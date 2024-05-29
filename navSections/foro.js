@@ -1,5 +1,6 @@
-const URL = "http://localhost:3000/"
-const URLComments = "http://localhost:3000/comments"
+const URL = "http://localhost:3000/";
+const URLComments = "http://localhost:3000/comments";
+const URLReplies = "http://localhost:3000/replies";
 
 const form = document.querySelector("#comment_form");
 const textarea = document.querySelector("#textarea");
@@ -63,7 +64,7 @@ async function getComment(){
     
 }
 
-function addReply(event){
+async function addReply(event){
     // I decare what i click as a variable
     const evento = event.target;
 
@@ -73,26 +74,43 @@ function addReply(event){
         div_hide.classList.remove("hide");
 
             // when the form is submitted
-        replyForm.addEventListener("submit", (event)=>{
+        replyForm.addEventListener("submit", async (event)=>{
             event.preventDefault()
 
             // Hide the form of reply
             div_hide.classList.add("hide");
 
-            const padre = evento.parentNode;
-            const abuelo = padre.parentNode;
+            // Reply to JSON server
+            const reply_inputValue = reply_input.value;
+            console.log(reply_inputValue)
+
+            const newReply = {
+                reply: reply_inputValue
+            }
+
+            await fetch(URLReplies, {
+                method: "POST",
+                headers: {"Content-type": "application/json"},
+                body: JSON.stringify(newReply)
+            })
+
+            const response2 = await fetch(URLReplies);
+            const data2 = await response2.json();
+            const dataLength = data2.length-1;
+            console.log(data2[dataLength])
+
+            const father = evento.parentNode;
+            const grandPa = father.parentNode;
             const cardReply = `
             <div class="cardReply">
-            <h3>Reply from Traveller</h3>
+            <h3>Reply from Traveller#${data2[dataLength].id}</h3>
                 <div class="headerReply">
                     <div><i class="fa-regular fa-face-smile fa-4x"></i></div>
                 </div>
-                <span>${reply_input.value}</span>
+                <span>${data2[dataLength].reply}</span>
             </div>`;
-            abuelo.parentNode.innerHTML += cardReply;
+            grandPa.parentNode.innerHTML += cardReply;
             reply_input.value = "";
         })
     }
-
-    
 }
