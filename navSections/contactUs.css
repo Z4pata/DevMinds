@@ -42,9 +42,13 @@ label {
 }
 
 #form {
+    box-shadow: 12px 20px 23px 4px rgba(0,0,0,0.75);
     position: absolute;
-    top: 180px;
-    left: 560px;
+    top: 140px;
+    left: 450px;
+    background-color: #333333c4;
+    padding: 50px;
+    border-radius: 30px;
 }
 
 
@@ -55,7 +59,7 @@ label {
 .field label {
     display: block;
     font-size: 17px;
-    color: black;
+    color: white;
 }
 
 .field input {
