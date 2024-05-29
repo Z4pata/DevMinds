@@ -44,7 +44,13 @@ button:hover {
     border-top: 5px solid black;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
+}
 
+.cover label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .cover label{
@@ -76,6 +82,14 @@ button:hover {
     backface-visibility: hidden;
     z-index: 99;
     padding: 10px;
+}
+
+.front-page, .back-page {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+
 }
 
 .page{
