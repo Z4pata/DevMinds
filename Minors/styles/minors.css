@@ -24,7 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    margin-bottom: 15px;
     gap: 10px;
     a {
         text-decoration: none;
@@ -32,26 +31,22 @@ body {
 }
 
 main {
-    padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    margin-right: 50px;
 }
 
-
 /* -----------------------------------Buttons and hearts------------------------------------------- */
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
     width: 100%;
-    height: 100%;
-    
+    height: 70vh;
 }
 
 .containerButtons {
-    /* background-color: brown; */
     width: 45%;
     height: 100%;
     display: flex;
@@ -63,11 +58,8 @@ main {
 }
 
 .containerHearts {
-    /* background-color: yellow; */
-    width: 5%;
-    height: 100%;
+    width: 15%;
     display: flex;
-    justify-content: end;
     flex-direction: column;
     gap: 10px;
     align-items: center;
@@ -76,7 +68,7 @@ main {
 .container-buttons-hearts{
     display: flex;
     width: 50%;
-    justify-content: end;
+    justify-content: center;
 }
 
 .buttonFeel {
@@ -267,195 +259,226 @@ main {
     font-size: 20px;
 }
 
+
+@keyframes movimiento1 {
+    from {margin-left: 79%;}
+    to {margin-left: 65%;}
+}
+
+@keyframes movimiento2 {
+    from {margin-left: 89%;}
+    to {margin-left: 80%;}
+}
+
+@keyframes movimiento3 {
+    from {margin-left: 59%;}
+    to {margin-left: 75%;}
+}
+
+@keyframes movimiento4 {
+    from {margin-left: 70%;}
+    to {margin-left: 67%;}
+}
+
+@keyframes movimiento5 {
+    from {margin-left: -5%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento6 {
+    from {margin-left: -15%;}
+    to {margin-left: 23%;}
+}
+
+@keyframes movimiento7 {
+    from {margin-left: -10%;}
+    to {margin-left: 10%;}
+}
+
+@keyframes movimiento8 {
+    from {margin-left: 5%;}
+    to {margin-left: 30%;}
+}
+
+.nubes:nth-child(1) {
+    background-image: url(/img/nube.png);
+    animation: movimiento1 6s linear forwards;
+}
+
+.nubes:nth-child(2) {
+    background-image: url(/img/nube.png);
+    animation: movimiento2 6s linear forwards;
+}
+
+.nubes:nth-child(3) {
+    background-image: url(/img/nube.png);
+    animation: movimiento3 6s linear forwards;
+}
+
+.nubes:nth-child(4) {
+    background-image: url(/img/nube.png);
+    animation: movimiento4 6s linear forwards;
+}
+
+.nubes:nth-child(5) {
+    background-image: url(/img/nube.png);
+    animation: movimiento5 6s linear forwards;
+}
+
+.nubes:nth-child(6) {
+    background-image: url(/img/nube.png);
+    animation: movimiento6 6s linear forwards;
+}
+
+.nubes:nth-child(7) {
+    background-image: url(/img/nube.png);
+    animation: movimiento7 6s linear forwards;
+}
+
+.nubes:nth-child(8) {
+    background-image: url(/img/nube.png);
+    animation: movimiento8 6s linear forwards;
+}
+
+.nubes {
+    background-image: url(/img/nube.png);
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+.nube1 {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube2 {
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube3 {
+    position: absolute;
+    top: 150px;
+    width: 150px;
+    height: 70px;
+}
+
+.nube4 {
+    position: absolute;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube5 {
+    position: absolute;
+    top: 300px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube6 {
+    position: absolute;
+    top: 350px;
+    width: 170px;
+    height: 85px;
+}
+
+.nube7 {
+    position: absolute;
+    top: 420px;
+    width: 150px;
+    height: 50px;
+}
+
+.nube8 {
+    position: absolute;
+    top: 470px;
+    width: 180px;
+    height: 90px;
+}
+
 /* -----------------------------------Image beside the buttons------------------------------------------- */
 .containerBox {
-    background-image: url(/img/objeto1.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 10px;
     
 }
 .containerBox h1{
-    width: 80%;
+    z-index: 2;
+    font-size: 35px;
+}
 
+.containerBox img {
+    width: 320px;
+    z-index: 1;
+    position: absolute;
 }
 
 @media (max-width: 420px){
-    .containerHearts{
-        width: 23%;
+    body {
+        margin-bottom: 150px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+    
+    .containerBox img {
+        width: 280px;
+        position: relative;
+        right: 180px;
+    }
+
+    .nubes {
+        display: none;
     }
 
     .buttonFeel{
         font-size: 70%;
-        width: 100px;
+        width: 120px;
         height: 40px;
     }
 
     .heart{
-        font-size: 70%;
+        font-size: 90%;
         width: 40px;
         height: 40px;
     }
 
     .containerBox {
-        background-image: url(/img/objeto1.png);
-        background-repeat: no-repeat;
-        background-size: 110%;
-        width: 71%;
-        height: 281px;
+        width: 90%;
     }
     .container {
         display: flex;
         flex-direction: column-reverse;
+        align-items: end;
     }
-    
-    .nubes {
-        background-image: url(/img/nube.png);
-        background-size: 100% 100%;
-        z-index: 2;
-    }
-    
-    @keyframes movimiento1 {
-        from {margin-left: 79%;}
-        to {margin-left: 65%;}
-    }
-    
-    @keyframes movimiento2 {
-        from {margin-left: 89%;}
-        to {margin-left: 80%;}
-    }
-    
-    @keyframes movimiento3 {
-        from {margin-left: 59%;}
-        to {margin-left: 75%;}
-    }
-    
-    @keyframes movimiento4 {
-        from {margin-left: 70%;}
-        to {margin-left: 67%;}
-    }
-    
-    @keyframes movimiento5 {
-        from {margin-left: -5%;}
-        to {margin-left: 10%;}
-    }
-    
-    @keyframes movimiento6 {
-        from {margin-left: -15%;}
-        to {margin-left: 23%;}
-    }
-    
-    @keyframes movimiento7 {
-        from {margin-left: -10%;}
-        to {margin-left: 10%;}
-    }
-    
-    @keyframes movimiento8 {
-        from {margin-left: 5%;}
-        to {margin-left: 30%;}
-    }
-    
-    .nubes:nth-child(1) {
-        background-image: url(/img/nube.png);
-        animation: movimiento1 6s linear forwards;
-    }
-    
-    .nubes:nth-child(2) {
-        background-image: url(/img/nube.png);
-        animation: movimiento2 6s linear forwards;
-    }
-    
-    .nubes:nth-child(3) {
-        background-image: url(/img/nube.png);
-        animation: movimiento3 6s linear forwards;
-    }
-    
-    .nubes:nth-child(4) {
-        background-image: url(/img/nube.png);
-        animation: movimiento4 6s linear forwards;
-    }
-    
-    .nubes:nth-child(5) {
-        background-image: url(/img/nube.png);
-        animation: movimiento5 6s linear forwards;
-    }
-    
-    .nubes:nth-child(6) {
-        background-image: url(/img/nube.png);
-        animation: movimiento6 6s linear forwards;
-    }
-    
-    .nubes:nth-child(7) {
-        background-image: url(/img/nube.png);
-        animation: movimiento7 6s linear forwards;
-    }
-    
-    .nubes:nth-child(8) {
-        background-image: url(/img/nube.png);
-        animation: movimiento8 6s linear forwards;
-    }
-    
-    .nube1 {
-        position: absolute;
-        top: 50px;
-        width: 150px;
-        height: 50px;
-    }
-    
+}
+
+@media screen and (min-width: 421px) {
     .nube2 {
-        position: absolute;
-        top: 100px;
-        width: 150px;
-        height: 50px;
-    }
-    
+        display: none;
+    }  
+
     .nube3 {
-        position: absolute;
-        top: 150px;
-        width: 150px;
-        height: 70px;
-    }
-    
+        display: none;
+    }  
+
     .nube4 {
         display: none;
-        position: absolute;
-        top: 200px;
-        width: 150px;
-        height: 50px;
-    }
-    
-    .nube5 {
-        position: absolute;
-        top: 300px;
-        width: 150px;
-        height: 50px;
-    }
-    
-    .nube6 {
-        display: none;
-        position: absolute;
-        top: 350px;
-        width: 170px;
-        height: 85px;
-    }
-    
-    .nube7 {
-        display: none;
-        position: absolute;
-        top: 420px;
-        width: 150px;
-        height: 50px;
-    }
-    
+    }   
+
     .nube8 {
         display: none;
-        position: absolute;
-        top: 470px;
-        width: 180px;
-        height: 90px;
     }
 }

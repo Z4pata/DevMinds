@@ -13,7 +13,7 @@ button:hover {
 
 
 .book{
-    width: 25vw;
+    width: 35vw;
     height: 100%;
     position: relative;
     transition: 2s;
@@ -26,7 +26,6 @@ button:hover {
 }
 
 .cover, .back-cover {
-    /* background-color: #FFB1BE; */
     width: 100%;
     height: 100%;
     border-radius: 0 15px 15px 0;
@@ -162,4 +161,16 @@ button:hover {
 #checkbox-page3:checked ~ .book #page3 {
     transform: rotateY(-180deg);
     z-index: 4;
+}
+
+@media screen and (min-width: 421px) {
+    .book {
+        width: 45vw;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .book {
+        width: 35vw;
+    }
 }
