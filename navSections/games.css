@@ -7,7 +7,6 @@
 html {
     cursor: url("/img/cursor1.png"),  auto;
     background-image: url("/img/bgGames.jpeg");
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -28,20 +27,19 @@ body {
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    position: relative;
     a {
         text-decoration: none;
     }
 }
 
 main {
-    height: 77vh;
     margin-top: 40px;
 }
 
 .div-3buttons {
     display: flex;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .buttonGame {
@@ -151,6 +149,10 @@ main {
     animation: movimiento8 6s linear forwards;
 }
 
+.nubes {
+    z-index: -1;
+}
+
 .nube1 {
     position: absolute;
     top: 50px;
@@ -206,4 +208,23 @@ main {
     top: 470px;
     width: 180px;
     height: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-3buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        height: 65vh;
+    }
+
+    .nubes {
+        display: none;
+    }
 }
