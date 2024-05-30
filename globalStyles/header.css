@@ -33,7 +33,8 @@ button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
-header {z-index: 2;
+header {
+    z-index: 3;
     width: 100%;
     height: 40%;
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;

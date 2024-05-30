@@ -5,18 +5,9 @@
 }
 
 html {
-    cursor: url("/img/cursor1.png"),  auto;
-}
-
-html{
-    background-image: url(/img/bgAdults.jpg);
+    background-image: url("/img/bgAdults.jpg");
     background-size: cover;
-}
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "area1 area2";
-    height: 80vh;
+    cursor: url("/img/cursor1.png"),  auto;
 }
 
 a {
@@ -28,240 +19,63 @@ button:hover {
     cursor: url("/img/mano.png"),  auto;
 }
 
-input:hover {
-    cursor: url("/img/mano.png"),  auto;
-}
-
 body {
     display: flex;
     flex-direction: column;
     margin: 20px;
     margin-bottom: 15px;
-    position: relative;
+    gap: 20px;
     a {
         text-decoration: none;
     }
 }
 
-main{
-    height: 84vh;
-}
-
-.nubes {
-    background-image: url(/img/nube.png);
-    background-size: 100% 100%;
-    z-index: 2;
-}
-
-@keyframes movimiento1 {
-    from {margin-left: 79%;}
-    to {margin-left: 65%;}
-}
-
-@keyframes movimiento2 {
-    from {margin-left: 89%;}
-    to {margin-left: 80%;}
-}
-
-@keyframes movimiento3 {
-    from {margin-left: 59%;}
-    to {margin-left: 75%;}
-}
-
-@keyframes movimiento4 {
-    from {margin-left: 70%;}
-    to {margin-left: 67%;}
-}
-
-@keyframes movimiento5 {
-    from {margin-left: -5%;}
-    to {margin-left: 10%;}
-}
-
-@keyframes movimiento6 {
-    from {margin-left: -15%;}
-    to {margin-left: 23%;}
-}
-
-@keyframes movimiento7 {
-    from {margin-left: -10%;}
-    to {margin-left: 10%;}
-}
-
-@keyframes movimiento8 {
-    from {margin-left: 5%;}
-    to {margin-left: 30%;}
-}
-
-.nubes:nth-child(1) {
-    background-image: url(/img/nube.png);
-    animation: movimiento1 6s linear forwards;
-}
-
-.nubes:nth-child(2) {
-    background-image: url(/img/nube.png);
-    animation: movimiento2 6s linear forwards;
-}
-
-.nubes:nth-child(3) {
-    background-image: url(/img/nube.png);
-    animation: movimiento3 6s linear forwards;
-}
-
-.nubes:nth-child(4) {
-    background-image: url(/img/nube.png);
-    animation: movimiento4 6s linear forwards;
-}
-
-.nubes:nth-child(5) {
-    background-image: url(/img/nube.png);
-    animation: movimiento5 6s linear forwards;
-}
-
-.nubes:nth-child(6) {
-    background-image: url(/img/nube.png);
-    animation: movimiento6 6s linear forwards;
-}
-
-.nubes:nth-child(7) {
-    background-image: url(/img/nube.png);
-    animation: movimiento7 6s linear forwards;
-}
-
-.nubes:nth-child(8) {
-    background-image: url(/img/nube.png);
-    animation: movimiento8 6s linear forwards;
-}
-
-.nube1 {
-    position: absolute;
-    top: 50px;
-    width: 150px;
-    height: 50px;
-}
-
-.nube2 {
-    position: absolute;
-    top: 100px;
-    width: 150px;
-    height: 50px;
-}
-
-.nube3 {
-    position: absolute;
-    top: 150px;
-    width: 150px;
-    height: 70px;
-}
-
-.nube4 {
-    position: absolute;
-    top: 200px;
-    width: 150px;
-    height: 50px;
-}
-
-.nube5 {
-    position: absolute;
-    top: 300px;
-    width: 150px;
-    height: 50px;
-}
-
-.nube6 {
-    position: absolute;
-    top: 350px;
-    width: 170px;
-    height: 85px;
-}
-
-.nube7 {
-    position: absolute;
-    top: 420px;
-    width: 150px;
-    height: 50px;
-}
-
-.nube8 {
-    position: absolute;
-    top: 470px;
-    width: 180px;
-    height: 90px;
-}
-
-/* -----------------------------------left site images----------------------------------------------- */
-
-.images-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:"empty img1 img2 img2"
-                        "empty img1 img2 img2"
-                        "img3 img3 img2 img2"
-                        "img3 img3 img2 img2"
-                        "img3 img3 img4 img4";
+main {
+    display: flex;
+    justify-content: space-around;
 }
 
 
-.image1{
-    background-image: url(/img/objeto1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: img1;
+.book-mobile{
+    display: none;
 }
 
-.image2 {
-    background-image: url(/img/objeto1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: img2;
-}
-.image3 {
-    background-image: url(/img/objeto1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: img3;
+.section-book{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 80vh;
 }
 
-/* -----------------------------------Buttons and hearts------------------------------------------- */
-
+.cover, .back-cover {
+    background-color: #ff6a00;
+}
 
 .container {
     display: flex;
     justify-content: center;
-    /* background-color: blue; */
-    width: 100%;
-    height: 100%;
-    grid-area: area2;
+    align-items: center;
 }
 
 .containerButtons {
-    /* background-color: brown; */
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: end;
-    justify-content: end;
-    margin-right: 4%;
 }
 
 .containerHearts {
-    /* background-color: yellow; */
     display: flex;
-    justify-content: end;
     flex-direction: column;
     gap: 10px;
     margin-left: 4px;
-    align-items: center;
-}
-@media (max-width: 400px){
-    .containerHearts{
-        width: 23%;
-    }
 }
 
 .container-buttons-hearts{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonFeel {
@@ -274,18 +88,8 @@ main{
     background-color: #fdfae6;
     border: 2px solid black;
 }
-@media (max-width: 400px){
-    .buttonFeel{
-        font-size: 70%;
-        width: 100px;
-        height: 40px;
-    }
 
-}
-
-
-
-/* Animation buttons */
+/* ------------------------ Animation buttons -----------------------------*/
 
 /* Anxiety button */
 .buttonAnxiety {
@@ -461,22 +265,15 @@ main{
     color: #fdfae6;
     font-size: 20px;
 }
-@media (max-width: 400px){
-    .heart{
-        font-size: 70%;
-        width: 40px;
-        height: 40px;
-    }
-}
 
-/* Clouds */
+/* -------------------- Clouds images/animations ---------------------- */
+
 .nubes {
     background-image: url(/img/nube.png);
     background-size: 100% 100%;
     z-index: 2;
 }
 
-/* Clouds Movements */
 @keyframes movimiento1 {
     from {margin-left: 79%;}
     to {margin-left: 65%;}
@@ -489,12 +286,12 @@ main{
 
 @keyframes movimiento3 {
     from {margin-left: 59%;}
-    to {margin-left: 35%;}
+    to {margin-left: 75%;}
 }
 
 @keyframes movimiento4 {
-    from {margin-left: 50%;}
-    to {margin-left: 80%;}
+    from {margin-left: 75%;}
+    to {margin-left: 40%;}
 }
 
 @keyframes movimiento5 {
@@ -517,7 +314,6 @@ main{
     to {margin-left: 30%;}
 }
 
-/* Clouds integrate Movements */
 .nubes:nth-child(1) {
     background-image: url(/img/nube.png);
     animation: movimiento1 6s linear forwards;
@@ -558,7 +354,6 @@ main{
     animation: movimiento8 6s linear forwards;
 }
 
-/* clouds positions */
 .nube1 {
     position: absolute;
     top: 50px;
@@ -574,6 +369,7 @@ main{
 }
 
 .nube3 {
+    display: none;
     position: absolute;
     top: 150px;
     width: 150px;
@@ -613,4 +409,96 @@ main{
     top: 470px;
     width: 180px;
     height: 90px;
+}
+
+/* ---------- RESPONSIVE --------- */
+@media screen and (max-width: 420px) {
+    .book-mobile {
+        display: inline-block;
+        background-color: #ff6a00;
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 5px #000000;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
+    }
+
+    .section-book {
+        display: none;
+    }
+
+    .containerButtons {
+        display: none;
+    }
+
+    .containerHearts {
+        display: none;
+    }
+
+    .page-mobile {
+        border: solid 1px #000000;
+        border-radius: 15px;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
+        display: flex;
+        flex-direction: column; 
+        background-color: #fdfae6;
+        padding: 10px;
+    }
+
+    .nubes {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 421px) {
+    main {
+        flex-direction: column;
+    }
+
+    .section-book {
+        display: none;
+    }
+
+    .book-mobile {
+        display: inline-block;
+        background-color: #ff6a00;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        border: solid 5px #000000;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
+    }
+
+    .page-mobile {
+        border: solid 1px #000000;
+        border-radius: 15px;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
+        display: flex;
+        flex-direction: column; 
+        background-color: #fdfae6;
+        padding: 10px;
+    }
+
+    .nubes {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    header {
+        margin-bottom: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    .section-book {
+        display: flex;
+        margin-left: 200px;
+        width: 30vw;
+    }
+
+    .book-mobile {
+        display: none;
+    }
 }

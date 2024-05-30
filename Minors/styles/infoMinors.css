@@ -32,10 +32,8 @@ body {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 450px;
-    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .book-mobile{
@@ -46,13 +44,14 @@ main {
     display: flex;
     justify-content: end;
     align-items: center;
+    height: 80vh;
 }
 
 .cover, .back-cover {
     background-color: #a2e02d;
 }
 
-/* -----------------------------------Buttons and hearts------------------------------------------- */
+/* ------------------------ Buttons and hearts ------------------------------- */
 .container {
     display: flex;
     justify-content: center;
@@ -70,7 +69,6 @@ main {
     width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 10px;
     align-items: end;
 }
@@ -304,8 +302,8 @@ main {
 }
 
 @keyframes movimiento4 {
-    from {margin-left: 70%;}
-    to {margin-left: 67%;}
+    from {margin-left: 75%;}
+    to {margin-left: 40%;}
 }
 
 @keyframes movimiento5 {
@@ -429,7 +427,13 @@ main {
 @media screen and (max-width: 420px) {
     .book-mobile {
         display: inline-block;
+        background-color: #a2e02d;
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 5px #000000;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
     }
+
     .section-book {
         display: none;
     }
@@ -442,9 +446,35 @@ main {
         display: none;
     }
 
-    .book-mobile {
-        background-color: #FFB1BE;
+    .page-mobile {
+        border: solid 1px #000000;
+        border-radius: 15px;
+        box-shadow: 0 0 5px rgb(41, 41, 41);
+        display: flex;
+        flex-direction: column; 
+        background-color: #fdfae6;
         padding: 10px;
+    }
+
+    .nubes {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 421px) {
+    main {
+        flex-direction: column;
+    }
+
+    .section-book {
+        display: none;
+    }
+
+    .book-mobile {
+        display: inline-block;
+        background-color: #a2e02d;
+        padding: 10px;
+        margin-bottom: 30px;
         border-radius: 15px;
         border: solid 5px #000000;
         box-shadow: 0 0 5px rgb(41, 41, 41);
@@ -459,10 +489,8 @@ main {
         background-color: #fdfae6;
         padding: 10px;
     }
-}
 
-@media screen and (min-width: 421px) {
-    .book-mobile {
+    .nubes {
         display: none;
     }
 }
@@ -473,6 +501,16 @@ main {
     }
 
     main {
-        height: 70vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .section-book {
+        display: flex;
+        margin-left: 200px;
+        width: 30vw;
+    }
+
+    .book-mobile {
+        display: none;
     }
 }
