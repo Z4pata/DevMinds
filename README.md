@@ -2,8 +2,7 @@
 
 <h1>PROYECTO CALM MIND</h1>
 
-
-<img src='https://repository-images.githubusercontent.com/798533854/2964ed9c-f940-412c-be14-b27c4b8bab15'>
+<img src='img/calmMindBlack.png'>
 
 
 <h2>Eslogan:</h2>
@@ -85,6 +84,17 @@ Estas páginas tendrán secciónes para dar información acerca de esta emoción
             </li>
         </ul>
     </li>
+</ul>
+<h2>Diagrama de flujo</h2>
+<img src="img/WhatsApp Image 2024-05-29 at 5.45.35 PM.jpeg">
+
+
+<h2>Trello: </h2>
+<ul>
+    <li> <a href="https://trello.com/invite/b/zNjwBtsm/ATTIfdc35c0a559a77f2b2c0e50bb30c911a8D762337/proyecto-calm-mind">Juan Felipe Jimenez</a></li>
+    <li><a href="https://trello.com/invite/b/aJl0I3nF/ATTIb2cc100e981cae208ad79780b337c20e52801737/proyecto-calm-mind">Tomas Velasquez</a></li>
+    <li><a href="https://trello.com/invite/b/pfv0n3uE/ATTId272b7b01bf8e0aa10079a43e237656d23AAEFA6/proyecto-calm-mind">Juan Jose Zapata</a></li>
+    <li><a href="https://trello.com/invite/b/1abYCGQQ/ATTIc11526fd3a1f4aaf5673de539fd051673A8D53C0/calm-mind">Melody Rubio Arboleda</a></li>
 </ul>
 
 <h2><a href="https://www.canva.com/design/DAGFday-XK8/HtsfE12G4S2adfbY_dnHGQ/edit">MockUp o Maqueta</a></h2>
