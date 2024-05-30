@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    cursor: url("/img/cursor1.png"),  auto;
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mano.png"),  auto;
+}
+
+button:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
+input:hover {
+    cursor: url("/img/mano.png"),  auto;
+}
+
+body {
+    display: flex;
+    margin: 7rem;
+    a {
+        text-decoration: none;
+    }
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    --input-focus: #2d8cf0;
+    --font-color: black;
+    --font-color-sub: black;
+    --bg-color: #fff;
+    --main-color: black;
+    padding: 20px;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+
+.title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.input {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.input:focus {
+    border: 2px solid var(--input-focus);
+}
+
+.button-confirm {
+    margin: 50px auto 0 auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    --bg: #fdfae6;
+    --hover-bg: #ff8200;
+    --hover-text: #000;
+    border: 2px solid black;
+    background: var(--bg);
+    transition: 0.2s;
+}
+
+.button-confirm:hover {
+    color: black;
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem black;
+}
+.button-confirm:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+
