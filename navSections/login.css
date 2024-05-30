@@ -32,10 +32,10 @@ input:hover {
 
 body {
     display: flex;
-    margin: 7rem;
-    a {
+    margin-top: 7rem;
+        a {
         text-decoration: none;
-    }
+        }
     justify-content: center;
     align-items: center;
 }
@@ -121,4 +121,8 @@ body {
     box-shadow: none;
 }
 
-
+@media screen and (max-width: 768px) {
+    body {
+        margin: 5rem;
+    }
+}
